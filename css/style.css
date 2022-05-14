@@ -42,14 +42,10 @@ body {
     color: var(--accent-color);
 }
 /* Style Hero */
-.hero, .hero-title {
+.heroes, .hero-title {
     color:#FFFFFF ;
 }
-.hero-button,
-.hero-button:focus {
-    color: #FFFFFF;
-    background-color: var(--accent-color) ;
-}
+
 /* .hero, .hero-title,.hero-button {
     background-color: #2F303A; */
 
@@ -64,6 +60,23 @@ body {
 /* Team */
 .team-title{
     color: var(--secondary-color) ;
+}
+/* Portfolio */
+
+/* Buttons */
+.button-hero, .button-hero:focus {
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+}
+.button, .portfolio {
+    color: var(--secondary-color);
+    background-color: var(--secondary-background)
+}
+
+ .portfolio:focus,
+ .portfolio:hover {
+    color: #FFFFFF;
+    background-color: var(--accent-color);
 }
 
 /* вторичный цвет #212121*/
