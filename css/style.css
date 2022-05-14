@@ -34,7 +34,7 @@ body {
 {
     color: var(--accent-color) ;
 }
-.site-nav .link.current {
+.site-nav .link-current {
     color: var(--accent-color);
 }
 .contact-nav .contact-link {
@@ -73,13 +73,13 @@ body {
     color: #FFFFFF;
     background-color: var(--accent-color);
 }
-.button .portfolio {
+.button-portfolio {
     color: var(--secondary-color);
     background-color: var(--secondary-background)
 }
 
- .portfolio:focus,
- .portfolio:hover {
+ .button-portfolio:focus,
+ .button-portfolio:hover {
     color: #FFFFFF;
     background-color: var(--accent-color);
 }
