@@ -1,11 +1,14 @@
 :root {
-  --background-color: #e5e5e5;
+  --background-color: #ffffff;
   --general-color: #757575;
   --accent-color: #2196f3;
   --secondary-color: #212121;
   --secondary-background: #f5f4fa;
   --background-hero-footer: #2f303a;
   --primary-white: #ffffff;
+  --contact-footer: rgba(255, 255, 255, 0.6);
+  --logo-studio: #000000;
+  --buton-hero-hover: #188CE8;
 }
 
 /* вторичный цвет #212121*/
@@ -21,7 +24,7 @@ body {
   background-color: var(--background-color);
   color: var(--general-color);
   font-family: Roboto, sans-serif;
-  letter-spacing: 2%;
+  letter-spacing: 0.03em;
   line-height: 1.14;
 }
 .logo {
@@ -29,7 +32,10 @@ body {
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 3%;
+  text-decoration: none;
+}
+.studio{
+  color: var(--logo-studio);
 }
 .list {
   list-style: none;
@@ -39,6 +45,7 @@ body {
   color: var(--secondary-color);
   font-weight: 500;
   font-size: 14px;
+  text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -49,6 +56,7 @@ body {
 }
 .contact-nav .contact-link {
   color: var(--general-color);
+  text-decoration: none;
 }
 .contact-nav .contact-link:hover,
 .contact-nav .contact-link:focus {
@@ -62,55 +70,49 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  letter-spacing: 6%;
+  letter-spacing: 0.06em;
   text-align: center;
   vertical-align: top;
+  text-transform: uppercase;
+   
 }
 .heroes {
   background-color: var(--background-hero-footer);
 }
-/* .hero, .hero-title,.hero-button {
-    background-color: #2F303A; */
-
 /* Section */
 .section-title {
   color: var(--secondary-color);
   text-align: center;
+  font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
 }
 /* features */
 .title {
   color: var(--secondary-color);
   font-weight: 700;
   font-size: 14px;
-  text-align: left;
-  vertical-align: top;
-  letter-spacing: 3%;
+  text-transform: uppercase;
 }
 .text-features {
   font-weight: 400;
-  line-height: 14px;
+  font-size: 14px;
   line-height: 1.71;
-  text-align: left;
-  vertical-align: top;
-  letter-spacing: 3%;
 }
 /* Team */
 .team-title {
   color: var(--secondary-color);
   font-weight: 500;
-  line-height: 16px;
-  line-height: 1.18;
-  text-align: left;
-  vertical-align: top;
-  letter-spacing: 3%;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 .position {
   font-weight: 400;
-  line-height: 16px;
+  font-size: 16px;
   line-height: 1.18;
   text-align: left;
   vertical-align: top;
-  letter-spacing: 3%;
 }
 /* Portfolio */
 
@@ -122,10 +124,13 @@ body {
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.88;
   text-align: center;
-  letter-spacing: 6%;
+  letter-spacing: 0.06em;
   cursor: pointer;
+}
+.button-hero:hover{
+  background-color: var(--buton-hero-hover);
 }
 .button-portfolio {
   color: var(--secondary-color);
@@ -133,17 +138,16 @@ body {
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: 1.63;
   text-align: center;
-  letter-spacing: 3%;
   cursor: pointer;
+  border: none;
+}
+.portfolio .link-active:hover{
+  background-color: var(--accent-color);
+  color: var(--primary-white);
 }
 
-.button-portfolio:focus,
-.button-portfolio:hover {
-  color: var(--primary-white);
-  background-color: var(--accent-color);
-}
 .portfolio-title {
   color: var(--secondary-color);
   font-weight: 700;
@@ -151,30 +155,43 @@ body {
   line-height: 2;
   text-align: left;
   vertical-align: top;
-  letter-spacing: 6%;
+  letter-spacing: 0.06em;
+    
 }
 .discription {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 3%;
+  line-height: 1.88;
 }
-footer {
+
+.footer {
   color: var(--primary-white);
   background-color: var(--background-hero-footer);
   font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 3%;
+
 }
+.logo-footer{
+  color: var(--accent-color);
+font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.footer .studio-footer{
+  color: var(--primary-white);
+}
+
 .list .text-footer {
   color: var(--primary-white);
   text-decoration: none;
   font-style: normal;
 }
 .contact-footer {
-  color: var(--primary-white);
+  color: var(--contact-footer);
   text-decoration: none;
   font-style: normal;
 }
