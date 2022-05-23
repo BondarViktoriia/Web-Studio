@@ -146,8 +146,6 @@ body {
 /* Section */
 .features {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .features-item:not(:last-child) {
   margin-right: 30px;
