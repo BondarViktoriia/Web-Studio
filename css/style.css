@@ -9,6 +9,7 @@
   --contact-footer: rgba(255, 255, 255, 0.6);
   --logo-studio: #000000;
   --buton-hero-hover: #188ce8;
+  --border-color: rgba(238, 238, 238, 1);
 }
 html {
   box-sizing: border-box;
@@ -49,17 +50,17 @@ body {
   line-height: 1.14;
 }
 /* Header */
- .main-nav {
+.main-nav {
   display: flex;
   align-items: center;
-
 }
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1230px;
-  outline: 2px solid brown;
+  width: 1200px;
+  padding-top: 94px;
   padding-left: 15px;
+  padding-bottom: 94px;
   padding-right: 15px;
 }
 .logo {
@@ -78,12 +79,11 @@ body {
   margin: 0px;
 }
 /* Site-nav */
-.site-nav{
+.site-nav {
   display: flex;
   margin-left: 93px;
-  
 }
-.site-nav .item:not(:last-child){
+.site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
 .site-nav .link {
@@ -95,7 +95,6 @@ body {
   font-weight: 500;
   font-size: 14px;
   text-decoration: none;
-
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -103,8 +102,8 @@ body {
 }
 .site-nav .link-current {
   display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--accent-color);
 }
 .contact-nav {
@@ -122,7 +121,6 @@ body {
 .contact-nav .contact-link:focus {
   color: var(--accent-color);
 }
-
 
 /* Style Hero */
 .heroes,
@@ -146,15 +144,15 @@ body {
   margin-bottom: 30px;
 }
 /* Section */
-.features{
+.features {
   display: flex;
-  }
-.features-item:not(:last-child){
-margin-right: 30px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-.section {
-  margin-bottom: 94px;
+.features-item:not(:last-child) {
+  margin-right: 30px;
 }
+
 .section-title {
   margin-top: 0px;
   margin-bottom: 0;
@@ -185,14 +183,34 @@ margin-right: 30px;
   text-align: center;
   letter-spacing: 0.03em;
 }
-.works {
-  margin-bottom: 94px;
+.works-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.works-item {
+  width: 370px;
+  margin-right: 30px;
+}
+.works-item:nth-child(3) {
+  margin-right: 0px;
 }
 
 /* Team */
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.team-item {
+  /* width: calc((100%-90)/4); */
+  width: 270px;
+  margin-right: 30px;
+  margin-bottom: 0px;
+}
+.team-item:nth-child(4) {
+  margin-right: 0px;
+}
 .section-team {
-  padding-bottom: 94px;
-  padding-top: 94px;
   margin-bottom: 0px;
   background-color: var(--secondary-background);
 }
@@ -215,6 +233,7 @@ margin-right: 30px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 .position {
   margin-top: 0;
@@ -224,8 +243,28 @@ margin-right: 30px;
   line-height: 1.18;
   text-align: left;
   vertical-align: top;
+  text-align: center;
 }
+
 /* Portfolio */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-element {
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-color);
+}
+.flex-element:nth-child(3n) {
+  margin-right: 0px;
+}
+.flex-element:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
 
 /* Buttons */
 .button-hero,
@@ -254,9 +293,9 @@ margin-right: 30px;
   color: var(--primary-white);
   background-color: var(--accent-color);
   font-family: Roboto, sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.63;
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
@@ -277,6 +316,18 @@ margin-right: 30px;
   cursor: pointer;
   border: none;
   display: inline-block;
+}
+.container-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.btn-item {
+  margin-right: 9px;
+}
+
+.btn-item:nth-child(5n) {
+  margin-right: 0px;
 }
 
 .portfolio .link-active:hover {
@@ -314,11 +365,21 @@ margin-right: 30px;
   line-height: 1.71;
 }
 .logo-footer {
+  display: flex;
+  margin-bottom: 20px;
   color: var(--accent-color);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+}
+.footer-adress {
+  margin-top: 0px;
+  margin-bottom: 9px;
+}
+.mail-footer {
+  display: flex;
+  margin-bottom: 9px;
 }
 
 .footer .studio-footer {
