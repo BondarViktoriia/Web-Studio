@@ -107,6 +107,9 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--accent-color);
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
 }
 .contact-nav {
   display: flex;
@@ -118,6 +121,10 @@ body {
 .contact-nav .contact-link {
   color: var(--general-color);
   text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  padding-top: 32px;
+  padding-left: 32px;
 }
 .contact-nav .contact-link:hover,
 .contact-nav .contact-link:focus {
@@ -153,7 +160,7 @@ body {
 .features {
   display: flex;
 }
-.features {
+.section {
   padding-top: 94px;
 }
 .features-item:not(:last-child) {
@@ -185,7 +192,6 @@ body {
 .works-title {
   margin-top: 0;
   margin-bottom: 50px;
-  padding-top: 94px;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -218,6 +224,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-white);
 }
 .team-item:nth-child(4) {
   margin-right: 0px;
@@ -234,7 +241,6 @@ body {
 .command-title {
   margin-top: 0;
   margin-bottom: 50px;
-  padding-top: 94px;
   font-family: "Roboto" sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -244,8 +250,6 @@ body {
   color: var(--secondary-color);
 }
 .team-title {
-  padding-top: 30px;
-  padding-bottom: 10px;
   margin-top: 0px;
   margin-bottom: 0px;
   color: var(--secondary-color);
@@ -258,7 +262,6 @@ body {
 .position {
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -266,7 +269,10 @@ body {
   vertical-align: top;
   text-align: center;
 }
-
+.team-descript {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 /* Portfolio */
 
 .flex-container {
@@ -280,15 +286,6 @@ body {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: var(--border-color);
-}
-.border-portfolio {
-  border-left-width: 1px;
-  border-left-style: solid;
-  border-left-color: var(--border-color);
-
-  border-right-width: 1px;
-  border-right-style: solid;
-  border-right-color: var(--border-color);
 }
 .flex-element:nth-child(3n) {
   margin-right: 0px;
@@ -356,7 +353,6 @@ body {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  padding-top: 94px;
 }
 .btn-item {
   margin-right: 9px;
@@ -372,15 +368,13 @@ body {
 }
 .portfolio {
   margin-top: 0px;
-}
-.flex-container {
-  padding-bottom: 96px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .portfolio-title {
   margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 20px;
+  margin-bottom: 4px;
   color: var(--secondary-color);
   font-weight: 700;
   font-size: 18px;
@@ -392,20 +386,32 @@ body {
 .discription {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 4px;
-  padding-bottom: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
 }
 
+.portfolio-discript {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: var(--border-color);
+
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: var(--border-color);
+}
+
 .footer {
   color: var(--primary-white);
   background-color: var(--background-hero-footer);
-  font-family: Roboto, sans-serif;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-footer {
   display: flex;
@@ -419,6 +425,7 @@ body {
 .footer-adress {
   margin-top: 0px;
   margin-bottom: 9px;
+  font-style: normal;
 }
 .mail-footer {
   display: flex;
