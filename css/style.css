@@ -124,7 +124,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   padding-top: 32px;
-  padding-left: 32px;
+  padding-bottom: 32px;
 }
 .contact-nav .contact-link:hover,
 .contact-nav .contact-link:focus {
@@ -162,6 +162,10 @@ body {
 }
 .section {
   padding-top: 94px;
+  padding-bottom: 94px;
+}
+.padding-bottom-zero {
+  padding-bottom: 0px;
 }
 .features-item:not(:last-child) {
   margin-right: 30px;
@@ -365,11 +369,6 @@ body {
 .portfolio .link-active:hover {
   background-color: var(--accent-color);
   color: var(--primary-white);
-}
-.portfolio {
-  margin-top: 0px;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .portfolio-title {
