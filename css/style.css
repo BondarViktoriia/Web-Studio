@@ -130,7 +130,25 @@ body {
 .contact-nav .contact-link:focus {
   color: var(--accent-color);
 }
-
+.mail-header::before{
+  content: "";
+  display: inline-flex;
+  width: 16px;
+  height: 12px;
+  background-image: url(../images.jpg/mail-ivon.png);
+  background-size: contain;
+  margin-right: 10px;
+}
+.tel-header::before {
+  content: "";
+  display: inline-flex;
+  width: 10px;
+  height: 16px;
+  background-image: url(../images.jpg/tel-icon.svg);
+  background-size: contain;
+  margin-right: 10px;
+ 
+}
 /* Style Hero */
 .heroes,
 .hero-title {
@@ -151,7 +169,6 @@ body {
   height: 600px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: content;
   text-align: center;
   padding-top: 200px;
   padding-right: 0px;
@@ -181,13 +198,33 @@ body {
 .features-item:not(:last-child) {
   margin-right: 30px;
 }
-
+.features-item::before{
+  content: "";
+  display: block;
+    height: 120px;
+  background: #F5F4FA;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+ .icon-antena::before {
+  background-image: url(../images.jpg/antenna-1.svg);
+}
+.icon-clock::before{
+  background-image: url(../images.jpg/clock.svg);
+}
+.icon-computer::before{
+  background-image: url(../images.jpg/computer.svg);
+}
+.icon-astronaut::before  {
+  background-image: url(../images.jpg/astronaut.svg);
+}
 .section-title {
   margin-top: 0px;
   margin-bottom: 0;
 }
 .title {
-  margin-top: 0px;
+  margin-top: 30px;
   margin-bottom: 10px;
   color: var(--secondary-color);
   text-align: left;
@@ -225,6 +262,7 @@ body {
 .works-item:nth-child(3) {
   margin-right: 0px;
 }
+
 
 /* Team */
 .team-container {
