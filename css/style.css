@@ -129,8 +129,9 @@ body {
 .contact-nav .contact-link:hover,
 .contact-nav .contact-link:focus {
   color: var(--accent-color);
+
 }
-.mail-header::before{
+/* .mail-header::before{
   content: "";
   display: inline-flex;
   width: 16px;
@@ -138,6 +139,12 @@ body {
   background-image: url(../images.jpg/mail-ivon.png);
   background-size: contain;
   margin-right: 10px;
+} */
+.mail-header:hover .mail,
+.mail-header:focus .mail
+{
+  fill: var(--accent-color);
+  cursor: pointer;
 }
 .tel-header::before {
   content: "";
@@ -326,7 +333,46 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* Portfolio */
+/* --------------------CLIENTS---------------------- */
+.clients-title{
+font-family: 'Roboto' sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--secondary-color);
+}
+.clients-list{
+  display: flex;
+}
+.button-icon{
+  width: 170px;
+  height: 92px;
+    cursor: pointer;
+ fill: rgba(175, 177, 184, 1);
+}
+.btn-icon{
+  padding: 0;
+  border: none;
+  margin-right: 0px;
+}
+
+  .button-icon:hover {
+    fill: var(--accent-color);
+  }
+.btn-list {
+  margin-right: 30px;
+  border: 1px solid rgba(175, 177, 184, 1);
+}
+
+.btn-list:nth-child(6n) {
+  margin-right: 0px;
+}
+
+
+/* ---------------------------------Portfolio ------------------- */
 
 .flex-container {
   display: flex;
@@ -347,7 +393,8 @@ body {
   margin-bottom: 0px;
 }
 
-/* Buttons */
+
+ /* -------------------Buttons-------------------------------- */
 .button-hero,
 .button-hero:focus {
   display: inline-block;
