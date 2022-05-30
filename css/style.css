@@ -146,7 +146,7 @@ body {
   fill: var(--accent-color);
   cursor: pointer;
 }
-.tel-header::before {
+/* .tel-header::before {
   content: "";
   display: inline-flex;
   width: 10px;
@@ -155,7 +155,8 @@ body {
   background-size: contain;
   margin-right: 10px;
  
-}
+} */
+
 /* Style Hero */
 .heroes,
 .hero-title {
@@ -205,7 +206,27 @@ body {
 .features-item:not(:last-child) {
   margin-right: 30px;
 }
-.features-item::before{
+.btn-features{
+  content: "";
+  display: block;
+  border: none;
+  background: #F5F4FA;
+  width: 270px;
+  height: 120px;
+  padding:0 ;
+
+}
+.icon {
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: contain;
+ width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+}
+
+
+/* .features-item::before{
   content: "";
   display: block;
     height: 120px;
@@ -213,8 +234,8 @@ body {
   border-radius: 4px;
   background-repeat: no-repeat;
   background-position: center;
-}
- .icon-antena::before {
+} */
+ /* .icon-antena::before {
   background-image: url(../images.jpg/antenna-1.svg);
 }
 .icon-clock::before{
@@ -225,7 +246,7 @@ body {
 }
 .icon-astronaut::before  {
   background-image: url(../images.jpg/astronaut.svg);
-}
+} */
 .section-title {
   margin-top: 0px;
   margin-bottom: 0;
@@ -332,6 +353,36 @@ body {
 .team-descript {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.team-icons-list{
+display: flex;
+margin-right: 20px;
+justify-content: center;
+}
+.icons-list {
+  width: 20px;
+  height: 20px;
+  
+}
+
+
+.btn-features{
+  content: "";
+  display: block;
+  border: none;
+  background: #F5F4FA;
+  width: 270px;
+  height: 120px;
+  padding:0 ;
+
+}
+.icon {
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: contain;
+ width: 270px;
+  height: 120px;
+  padding: 25px 100px;
 }
 /* --------------------CLIENTS---------------------- */
 .clients-title{
