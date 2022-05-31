@@ -130,6 +130,9 @@ body {
 .contact-nav .contact-link:focus {
   color: var(--accent-color);
 }
+.icon-mail{
+  margin: 0;
+}
 /* .mail-header::before{
   content: "";
   display: inline-flex;
@@ -405,26 +408,33 @@ body {
 .clients-list {
   display: flex;
   justify-content: center;
+  align-items: center;
  }
 .btn-list {
+  display: flex;
   width: 170px;
   height: 92px;
   margin-right: 30px;
   border: 1px solid rgba(175, 177, 184, 1);
-
 }
 .btn-list:nth-child(6n) {
   margin-right: 0px;
 }
-
+.href-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  
+}
 .button-icon {
   width: 100%;
 height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px 32px;
-  fill: rgba(175, 177, 184, 1);
+    fill: rgba(175, 177, 184, 1);
   cursor: pointer;
 
 }
@@ -603,4 +613,56 @@ height: 100%;
 }
 .adsdress-contact {
   font-style: normal;
+}
+
+
+.link-footer {
+  display: flex;
+  justify-content: center;
+  margin: 40px 940px 20px 70px;
+  }
+  .join{
+    font-family: 'Roboto' sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+
+  }
+.footer-list{
+  display: flex;
+  justify-content: center;
+}
+.list-link{
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+.list-link:last-child{
+  margin-right: 0px;
+}
+.link-item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  fill: red;
+}
+
+
+.icons-list:hover,
+.icons-list:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+.team-icon:hover,
+.team-icon:focus {
+  fill: #ffffff;
 }
