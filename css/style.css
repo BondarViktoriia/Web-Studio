@@ -126,13 +126,24 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
+.icon-contact{
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  fill: currentColor;
+  cursor: pointer;
+}
+.contact-nav .contact-link:focus,
 .contact-nav .contact-link:hover,
-.contact-nav .contact-link:focus {
+.contact-nav .icon-contact:focus,
+.contact-nav .icon-contact:hover
+{
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
-.icon-mail{
-  margin: 0;
-}
+
+
 /* .mail-header::before{
   content: "";
   display: inline-flex;
@@ -142,11 +153,9 @@ body {
   background-size: contain;
   margin-right: 10px;
 } */
-.mail-header:hover .mail,
-.mail-header:focus .mail {
-  fill: var(--accent-color);
-  cursor: pointer;
-}
+
+
+
 /* .tel-header::before {
   content: "";
   display: inline-flex;
@@ -404,6 +413,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  margin-top: 0px ;
 }
 .clients-list {
   display: flex;
@@ -436,6 +446,7 @@ height: 100%;
   align-items: center;
     fill: rgba(175, 177, 184, 1);
   cursor: pointer;
+  padding: 16px 32px;
 
 }
 
@@ -614,12 +625,19 @@ height: 100%;
 .adsdress-contact {
   font-style: normal;
 }
-
+.footer-soc {
+  margin: 0;
+}
+.join-text {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
 
 .link-footer {
   display: flex;
   justify-content: center;
-  margin: 40px 940px 20px 70px;
+  /* margin: 40px 940px 20px 70px; */
   }
   .join{
     font-family: 'Roboto' sans-serif;
@@ -635,6 +653,7 @@ color: #FFFFFF;
 .footer-list{
   display: flex;
   justify-content: center;
+  align-items: baseline;
 }
 .list-link{
   width: 44px;
@@ -647,22 +666,19 @@ color: #FFFFFF;
 .link-item {
   width: 100%;
   height: 100%;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 12px;
-  fill: red;
+  fill: var(--primary-white);
 }
 
-
-.icons-list:hover,
-.icons-list:focus {
+.link-item:hover,
+.link-item:focus{
   background-color: var(--accent-color);
-  border-radius: 50%;
+
 }
-.team-icon:hover,
-.team-icon:focus {
-  fill: #ffffff;
-}
+ 
