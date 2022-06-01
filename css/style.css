@@ -127,7 +127,7 @@ body {
   padding-bottom: 32px;
 }
 
-.icon-contact{
+.icon-contact {
   margin-right: 10px;
   justify-content: center;
   align-items: center;
@@ -137,12 +137,10 @@ body {
 .contact-nav .contact-link:focus,
 .contact-nav .contact-link:hover,
 .contact-nav .icon-contact:focus,
-.contact-nav .icon-contact:hover
-{
+.contact-nav .icon-contact:hover {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
-
 
 /* .mail-header::before{
   content: "";
@@ -153,8 +151,6 @@ body {
   background-size: contain;
   margin-right: 10px;
 } */
-
-
 
 /* .tel-header::before {
   content: "";
@@ -413,13 +409,13 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
-  margin-top: 0px ;
+  margin-top: 0px;
 }
 .clients-list {
   display: flex;
   justify-content: center;
   align-items: center;
- }
+}
 .btn-list {
   display: flex;
   width: 170px;
@@ -430,24 +426,22 @@ body {
 .btn-list:nth-child(6n) {
   margin-right: 0px;
 }
-.href-icon{
+.href-icon {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  
 }
 .button-icon {
   width: 100%;
-height: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-    fill: rgba(175, 177, 184, 1);
+  fill: rgba(175, 177, 184, 1);
   cursor: pointer;
   padding: 16px 32px;
-
 }
 
 .button-icon:hover {
@@ -476,7 +470,6 @@ height: 100%;
   margin-bottom: 0px;
 }
 
-
 /* -------------------Buttons-------------------------------- */
 .button-hero,
 .button-hero:focus {
@@ -497,7 +490,6 @@ height: 100%;
 }
 .button-hero:hover {
   background-color: var(--buton-hero-hover);
-  
 }
 .button-all,
 .button-all:focus {
@@ -534,9 +526,9 @@ height: 100%;
   display: inline-block;
 }
 .button-portfolio:hover,
-.button-portfolio:focus{
-  
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.button-portfolio:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .container-btn {
   display: flex;
@@ -557,7 +549,6 @@ height: 100%;
 }
 
 .portfolio-title {
-
   margin-top: 0;
   margin-bottom: 4px;
   color: var(--secondary-color);
@@ -568,8 +559,6 @@ height: 100%;
   vertical-align: top;
   letter-spacing: 0.06em;
   min-width: 322px;
-  
-
 }
 .discription {
   margin-top: 0;
@@ -593,14 +582,13 @@ height: 100%;
   border-right-width: 1px;
   border-right-style: solid;
   border-right-color: var(--border-color);
-  
- 
- }
-.flex-element:hover{
-  /* border: 1px solid #EEEEEE; */
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
- 
+.flex-element:hover {
+  /* border: 1px solid #EEEEEE; */
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 /* ----------------FOOTER------------------------- */
 .footer {
   display: flex;
@@ -649,11 +637,10 @@ height: 100%;
 }
 .footer-soc {
   margin: 0;
-
 }
 .join-text {
   display: flex;
-  
+
   align-items: center;
 }
 
@@ -663,33 +650,31 @@ height: 100%;
   align-items: center;
   margin-left: 70px;
   /* margin: 40px 940px 20px 70px; */
-  }
-  .join{
-    font-family: 'Roboto' sans-serif;
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #FFFFFF;
-margin-left: 70px;
-align-items: baseline;
-display: flex;
-
-  }
-.footer-list{
+}
+.join {
+  font-family: "Roboto" sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-left: 70px;
+  align-items: baseline;
+  display: flex;
+}
+.footer-list {
   display: flex;
   justify-content: center;
   align-items: baseline;
-  
 }
-.list-link{
+.list-link {
   width: 44px;
   height: 44px;
   margin-right: 10px;
 }
-.list-link:last-child{
+.list-link:last-child {
   margin-right: 0px;
 }
 .link-item {
@@ -703,20 +688,19 @@ display: flex;
   background-color: rgba(255, 255, 255, 0.1);
   padding: 12px;
   fill: var(--primary-white);
-  
 }
 
 .link-item:hover,
-.link-item:focus{
+.link-item:focus {
   background-color: var(--accent-color);
-
 }
- 
-.address-contact{
-  max-width: 231px;
-  max-height: 81px;}
 
-.footer-position{
+.address-contact {
+  max-width: 231px;
+  max-height: 81px;
+}
+
+.footer-position {
   display: flex;
   margin: 0;
   padding: 0;
