@@ -622,7 +622,7 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
-.flex-element:hover .portfolio-text {
+.flex-element:hover {
   opacity: 1;
 
 }
