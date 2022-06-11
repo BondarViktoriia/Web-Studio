@@ -474,8 +474,8 @@
                   <a class="footer-icons" href="">
                     <svg class="link-item" width="20" height="20">
                       <use
-                        href="./images.jpg/icons.svg#icon-twitter-icon"
-                      ></use>
+                        href="./images.jpg/icons.svg#icon-twitter-icon">
+                    </use>
                     </svg>
                   </a>
                 </li>
@@ -483,8 +483,8 @@
                   <a class="footer-icons" href="">
                     <svg class="link-item" width="10" height="20">
                       <use
-                        href="./images.jpg/icons.svg#icon-facebook-icon"
-                      ></use>
+                        href="./images.jpg/icons.svg#icon-facebook-icon">
+                </use>
                     </svg>
                   </a>
                 </li>
@@ -492,8 +492,8 @@
                   <a class="footer-icons" href="">
                     <svg class="link-item" width="20" height="20">
                       <use
-                        href="./images.jpg/icons.svg#icon-linkedin-icon"
-                      ></use>
+                        href="./images.jpg/icons.svg#icon-linkedin-icon">
+                    </use>
                     </svg>
                   </a>
                 </li>
@@ -510,34 +510,55 @@
             <use href="./images.jpg/icons.svg#icon-close-icon"></use>
           </svg>
         </button>
-        <form class="form">
+
+        <form class="form" autocomplete="off">
           <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-       <p class="form-field">
+       <div class="form-field">
         <label for="user-name">Имя</label>
-        <input type="text" name="user-name" id="user-name"/>
-       </p>
+        <input type="text" class="form-input" name="user-name" id="user-name"/>
+        <svg class="icon-modal" width="18" height="18"> 
+          <use href="./images.jpg/icons.svg#icon-name"></use>
+         </svg>
+       </div>
       
-       <p class="form-field"> 
+       <div class="form-field"> 
         <label for="user-tel">Телефон</label>
-        <input type="tel" name="user-tel" id="user-tel"/>
-       </p>
+        <input type="tel" class="form-input" name="user-tel" id="user-tel"/>
+        <svg class="icon-modal" width="18" height="18" >
+          <use href="./images.jpg/icons.svg#icon-phone"></use>
+        </svg>
+       </div>
 
-         <p class="form-field"> 
+         <div class="form-field"> 
           <label for="user-mail">Почта</label>
-          <input type="email" name="user-mail" id="user-mail"/>
-         </p>
+          <input type="email" class="form-input" name="user-mail" id="user-mail"/>
+          <svg class="icon-modal" width="18" height="18">
+            <use href="./images.jpg/icons.svg#icon-mail-modal"></use>
+          </svg>
+         </div>
 
-         <p class="form-field"> 
+         <div class="form-field"> 
           <label for="comment">Комментарий</label>
-          <textarea name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
-         </p>
+          <textarea name="comment" class="form-input" id="comment" rows="8" placeholder="Введите текст"></textarea>
+         </div>
 
-        <div class="policy">
-          <input type="checkbox" name="policy" id="policy" >
+        <!-- <div class="policy ">
+          <input type="checkbox" class="checkbox-label" name="policy" id="policy" >
+          <span class="checkbox-icon"></span>
           <label for="policy">Соглашаюсь с рассылкой и принимаю <span class="accent-text">Условия договора</span></label>
-        </div>
+        </div> -->
  
-         
+       
+        <label class="policy">
+          <input type="checkbox" class="checkbox-label" name="policy">
+          <span class="checkbox-icon">
+            <svg class="icon-check" width="16" height="15" >
+              <use href="./images.jpg/icons.svg#icon-icon-check"></use>
+            </svg>
+          </span>
+          Соглашаюсь с рассылкой и принимаю 
+          <a href="" class="accent-text">Условия договора</a>
+        </label>
          
          <button class="button-submit" type="submit">Отправить</button>
         </form>
