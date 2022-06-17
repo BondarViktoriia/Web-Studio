@@ -1,0 +1,8 @@
+.page__header {
+    @extend %container;
+    border-bottom: 1px solid var(--header-border-color);
+}
+.page__nav {
+    display: flex;
+    align-items: center;
+}
