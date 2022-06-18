@@ -30,7 +30,7 @@ body {
   line-height: 1.14;
 }
 
-.page__header {
+.benefits__container, .page__header {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -38,7 +38,7 @@ body {
   padding-right: 15px;
 }
 
-.contact__nav, .site-nav {
+.benefits__list, .contact__nav, .site-nav {
   list-style: none;
   padding: 0px;
   margin: 0px;
@@ -171,6 +171,8 @@ body {
   background-color: #2f303a;
   max-width: 1600px;
   height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
   padding-top: 200px;
   padding-right: 0px;
@@ -178,12 +180,59 @@ body {
   padding-left: 0px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
-  background-image: url(../images.jpg/hero.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
 }
 
 .hero__title {
   margin-bottom: 30px;
+}
+
+.hero__button {
+  display: inline-block;
+  min-width: 200px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 32px;
+  color: var(--primary-white);
+  background-color: #2196f3;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button__hero:focus {
+  display: inline-block;
+  min-width: 200px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 32px;
+  color: #ffffff;
+  background-color: #2196f3;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.button__hero:hover {
+  background-color: #188ce8;
+}
+
+benefits__title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.benefits__list {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */
