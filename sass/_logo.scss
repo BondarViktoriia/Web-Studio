@@ -8,3 +8,15 @@
 .studio__header {
     color: $logo-studio;
 }
+.footer__logo{
+    display: flex;
+        margin-bottom: 20px;
+        color: $accent-color;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        text-decoration: none;
+}
+.footer__studio {
+    color: $primary-white;
+}
