@@ -24,6 +24,7 @@
   padding-left: 0px;
   margin-left: auto;
   margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 .hero__title {
   margin-bottom: 30px;
@@ -69,5 +70,5 @@
   background-color: $buton-hero-hover;
 }
 .hero{
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpeg);
+  background-image: url(../images/hero.jpeg);
 }
