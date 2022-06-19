@@ -24,14 +24,6 @@
   padding-left: 0px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),
-    url(./images/hero.jpg);
-    background-image: linear-gradient(to right,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)),
-        url(../images/hero.jpg);
 }
 .hero__title {
   margin-bottom: 30px;
@@ -76,4 +68,6 @@
 .button__hero:hover {
   background-color: $buton-hero-hover;
 }
-
+.hero{
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpeg);
+}
