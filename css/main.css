@@ -30,7 +30,7 @@ body {
   line-height: 1.14;
 }
 
-.footer__container, .clients__container, .team__container, .works__container, .benefits__container, .page__header {
+.footer__container, .clients__container, .team__container, .works__container, .benefits__container, .header {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -38,7 +38,7 @@ body {
   padding-right: 15px;
 }
 
-.footer-soc__list, .footer__list, .clients__list, .team-icons__list, .team__thumb, .works__list, .benefits__list, .contact__nav, .site-nav {
+.footer-soc__list, .footer__list, .clients__list, .team-icons__list, .team__thumb, .works__list, .benefits__list, .contact-nav, .site-nav {
   list-style: none;
   padding: 0px;
   margin: 0px;
@@ -49,16 +49,16 @@ body {
   padding-bottom: 94px;
 }
 
-.page__header {
+.header {
   border-bottom: 1px solid var(--header-border-color);
 }
 
-.page__nav {
+.header__nav {
   display: flex;
   align-items: center;
 }
 
-.logo__header {
+.header__logo {
   color: #2196f3;
   font-family: Raleway, sans-serif;
   font-size: 26px;
@@ -66,7 +66,7 @@ body {
   text-decoration: none;
 }
 
-.studio__header {
+.header__studio {
   color: #000000;
 }
 
@@ -134,22 +134,22 @@ body {
   bottom: -1px;
 }
 
-.contact__nav {
+.contact-nav {
   display: flex;
   margin-left: auto;
 }
 
-.contact__item {
+.contact-nav__item {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.contact__item + .contact__item {
+.contact-nav__item + .contact-nav__item {
   margin-left: 50px;
 }
 
-.contact__link {
+.contact-nav__link {
   color: #757575;
   text-decoration: none;
   font-weight: 500;
@@ -159,16 +159,16 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact__icon {
+.contact-nav__icon {
   margin-right: 10px;
   fill: currentColor;
   cursor: pointer;
 }
 
-.contact__nav .contact__link:focus,
-.contact__nav .contact__link:hover,
-.contact__nav .contact-icon:focus,
-.contact__nav .contact-icon:hover {
+.contact-nav .contact-nav__link:focus,
+.contact-nav .contact-nav__link:hover,
+.contact-nav .contact-nav__icon:focus,
+.contact-nav .contact-nav__icon:hover {
   color: #2196f3;
   fill: #2196f3;
 }
