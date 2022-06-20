@@ -2,6 +2,13 @@
   @extend %list;
   display: flex;
   margin-left: auto;
+  & .contact-nav__link:focus,
+    & .contact-nav__link:hover,
+    & .contact-nav__icon:focus,
+    & .contact-nav__icon:hover {
+      color: $accent-color;
+      fill: $accent-color;
+    }
 }
 .contact-nav__item {
   display: flex;
@@ -26,11 +33,4 @@
   margin-right: 10px;
   fill: currentColor;
   cursor: pointer;
-}
-.contact-nav .contact-nav__link:focus,
-.contact-nav .contact-nav__link:hover,
-.contact-nav .contact-nav__icon:focus,
-.contact-nav .contact-nav__icon:hover {
-  color: $accent-color;
-  fill: $accent-color;
 }

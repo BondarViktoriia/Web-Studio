@@ -1,4 +1,4 @@
-.portfolio-cards__list{
+.portfolio-cards{
     @extend %list;
     display: flex;
         flex-wrap: wrap;
@@ -30,7 +30,11 @@
         transition-property: box-shadow;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+&:hover .portfolio-cards__text {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
 .portfolio-cards__thumb{
     position: relative;
         overflow: hidden;
@@ -60,10 +64,7 @@
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         
 }
-.portfolio-cards__link:hover .portfolio-cards__text{
-    opacity: 1;
-        transform: translateY(0);
-}
+
 .portfolio-cards__box{
     padding-top: 20px;
         padding-left: 24px;

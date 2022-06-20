@@ -16,8 +16,7 @@ html {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -38,13 +37,13 @@ body {
   padding-right: 15px;
 }
 
-.footer-soc__list, .footer__list, .clients__list, .team-icons__list, .team__thumb, .works__list, .benefits__list, .contact-nav, .site-nav {
+.footer-soc__list, .footer__list, .clients__list, .team__icons-list, .team__thumb, .works__list, .benefits__list, .contact-nav, .site-nav {
   list-style: none;
   padding: 0px;
   margin: 0px;
 }
 
-.clients__section, .team__section, .works, .benefits__container {
+.clients, .team, .works, .benefits__container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -106,6 +105,9 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.site-nav__link:hover, .site-nav__link:focus {
+  color: #2196f3;
+}
 
 .site-nav__link-current {
   display: flex;
@@ -116,11 +118,6 @@ body {
   font-weight: 500;
   font-size: 14px;
   text-decoration: none;
-}
-
-.site-nav__link:hover,
-.site-nav__link:focus {
-  color: #2196f3;
 }
 
 .site-nav__link-current::after {
@@ -137,6 +134,10 @@ body {
 .contact-nav {
   display: flex;
   margin-left: auto;
+}
+.contact-nav .contact-nav__link:focus, .contact-nav .contact-nav__link:hover, .contact-nav .contact-nav__icon:focus, .contact-nav .contact-nav__icon:hover {
+  color: #2196f3;
+  fill: #2196f3;
 }
 
 .contact-nav__item {
@@ -165,14 +166,6 @@ body {
   cursor: pointer;
 }
 
-.contact-nav .contact-nav__link:focus,
-.contact-nav .contact-nav__link:hover,
-.contact-nav .contact-nav__icon:focus,
-.contact-nav .contact-nav__icon:hover {
-  color: #2196f3;
-  fill: #2196f3;
-}
-
 .hero,
 .hero__title {
   margin-top: 0px;
@@ -199,7 +192,7 @@ body {
   padding-left: 0px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images.hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
 }
 
 .hero__title {
@@ -207,26 +200,6 @@ body {
 }
 
 .hero__button {
-  display: inline-block;
-  min-width: 200px;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  padding: 10px 32px;
-  color: var(--primary-white);
-  background-color: #2196f3;
-  font-family: Roboto, sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  text-align: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button__hero:focus {
   display: inline-block;
   min-width: 200px;
   border-radius: 4px;
@@ -241,9 +214,11 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.button__hero:hover {
+.hero__button:hover {
   background-color: #188ce8;
 }
 
@@ -350,7 +325,7 @@ body {
   left: 0;
 }
 
-.team__section {
+.team {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0px;
@@ -417,19 +392,19 @@ body {
   text-align: center;
 }
 
-.team-icons__list {
+.team__icons-list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.team-icons__item {
+.team__icons-item {
   width: 44px;
   height: 44px;
   margin-right: 10px;
 }
 
-.team-icons__item:last-child {
+.team__icons-item:last-child {
   margin-right: 0px;
 }
 
@@ -441,11 +416,12 @@ body {
   align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.team__href:hover,
-.team__href:focus {
+.team__href:hover, .team__href:focus {
   background-color: #2196f3;
   border-radius: 50%;
+}
+.team__href:hover .team__icon, .team__href:focus .team__icon {
+  fill: #ffffff;
 }
 
 .team__icon {
@@ -453,11 +429,6 @@ body {
   align-items: center;
   justify-content: center;
   fill: #afb1b8;
-}
-
-.team__href:hover .team__icon,
-.team__href:focus .team__icon {
-  fill: #ffffff;
 }
 
 .clients__title {
@@ -486,6 +457,9 @@ body {
   border: 1px solid rgb(175, 177, 184);
   border-radius: 4px;
 }
+.clients__item:hover, .clients__item:focus {
+  border: 1px solid rgb(33, 150, 243);
+}
 
 .clients__item:nth-child(6n) {
   margin-right: 0px;
@@ -499,20 +473,13 @@ body {
   height: 92px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.clients__href:hover .clients__icon, .clients__href:focus .clients__icon {
+  fill: #2196f3;
+}
 
 .clients__icon {
   fill: rgb(175, 177, 184);
   cursor: pointer;
-}
-
-.clients__href:hover .clients__icon,
-.clients__href:focus .clients__icon {
-  fill: #2196f3;
-}
-
-.clients__item:hover,
-.clients__item:focus {
-  border: 1px solid rgb(33, 150, 243);
 }
 
 .footer {
@@ -563,16 +530,16 @@ body {
   font-style: normal;
 }
 
-.footer__soc {
+.footer-soc {
   margin-left: 70px;
 }
 
-.footer__join {
+.footer-soc__join {
   display: flex;
   align-items: center;
 }
 
-.join__text {
+.footer-soc__join-text {
   font-family: "Roboto" sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -614,13 +581,11 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-soc__link:hover,
-.footer-soc__link:focus {
+.footer-soc__link:hover, .footer-soc__link:focus {
   background-color: #2196f3;
 }
 
-.footer__form {
+.footer-form {
   min-width: 570px;
   margin-left: 93px;
 }
@@ -732,7 +697,7 @@ body {
   fill: #2196f3;
 }
 
-.modal__title {
+.form__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -756,6 +721,16 @@ body {
   margin-bottom: 10px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.form__field:focus-within > .form__icon, .form__field:hover > .form__icon {
+  fill: #2196f3;
+}
+.form__field:focus-within > .form__icon, .form__field:hover > .form__icon {
+  fill: #2196f3;
+}
+.form__field:focus-within + input {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+}
 
 .form__field:last-of-type {
   margin-bottom: 20px;
@@ -772,9 +747,7 @@ body {
   resize: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.form__input:focus,
-.form__input:hover {
+.form__input:focus, .form__input:hover {
   border: 1px solid #2196f3;
   border-radius: 4px;
   outline: none;
@@ -800,20 +773,10 @@ body {
   resize: none;
 }
 
-.icon__modal {
+.form__icon {
   position: absolute;
   transform: translate(12px, 30px);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form__field:focus-within > .icon__modal,
-.form__field:hover > .icon__modal {
-  fill: #2196f3;
-}
-
-.form__field:focus-within + input {
-  border: 1px solid #2196f3;
-  border-radius: 4px;
 }
 
 .policy {
@@ -826,7 +789,7 @@ body {
   justify-content: center;
 }
 
-.checkbox__label {
+.policy__checkbox-label {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -834,14 +797,13 @@ body {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox__icon {
+.policy__checkbox-icon {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -851,7 +813,7 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox__label:checked + .checkbox__icon {
+.policy__checkbox-label:checked + .policy__checkbox-icon {
   background-color: #2196f3;
   border-color: #2196f3;
 }
@@ -870,7 +832,7 @@ body {
   color: #2196f3;
 }
 
-.policy__button {
+.policy-button {
   min-width: 200px;
   min-height: 50px;
   background: #2196f3;

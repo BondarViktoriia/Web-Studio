@@ -20,6 +20,10 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+&:hover,
+    &:focus {
+        color: $accent-color;
+    }
 }
 .site-nav__link-current{
     display: flex;
@@ -31,11 +35,9 @@
         font-weight: 500;
         font-size: 14px;
         text-decoration: none;
+
 }
-.site-nav__link:hover,
-.site-nav__link:focus {
-    color: $accent-color;
-}
+
 
 .site-nav__link-current::after {
     content: "";

@@ -29,32 +29,12 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images.hero.jpg);
+    url(../images/hero.jpg);
 }
 .hero__title {
   margin-bottom: 30px;
 }
 .hero__button {
-  display: inline-block;
-  min-width: 200px;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  padding: 10px 32px;
-  color: var(--primary-white);
-  background-color: $accent-color;
-  font-family: Roboto, sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  text-align: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button__hero:focus {
   display: inline-block;
   min-width: 200px;
   border-radius: 4px;
@@ -69,8 +49,10 @@
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-}
-
-.button__hero:hover {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+&:hover{
   background-color: $buton-hero-hover;
+}
 }

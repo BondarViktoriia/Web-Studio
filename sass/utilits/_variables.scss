@@ -11,33 +11,3 @@ $buton-hero-hover: #188ce8;
 $border-color: rgba(238, 238, 238, 1);
 $header-border-color: rgba(236, 236, 236, 1);
 
-html {
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
-body {
-    background-color: $background-color;
-    color: $general-color;
-    font-family: Roboto, sans-serif;
-    letter-spacing: 0.03em;
-    line-height: 1.14;
-}
