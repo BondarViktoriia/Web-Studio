@@ -1,5 +1,5 @@
 .team {
-  @extend %section;
+  @include section;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0px;
@@ -9,7 +9,7 @@
   padding-left: 15px;
 }
 .team__container {
-  @extend %container;
+  @include container;
 }
 .team__title {
   margin-top: 0;
@@ -23,7 +23,7 @@
   color: $secondary-color;
 }
 .team__thumb {
-  @extend %list;
+  @include list;
   display: flex;
   flex-wrap: wrap;
 }
@@ -64,7 +64,7 @@
   text-align: center;
 }
 .team__icons-list {
-  @extend %list;
+  @include list;
   display: flex;
   justify-content: center;
   align-items: center;

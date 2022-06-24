@@ -1,11 +1,11 @@
 .portfolio{
-    @extend %section;
+    @include section;
 }
 .portfolio__container{
-    @extend %container;
+    @include container;
 }
 .portfolio__filtrs-list{
-    @extend %list;
+    @include list;
 display: flex;
     justify-content: center;
     margin-bottom: 50px;

@@ -8,7 +8,7 @@
     padding-bottom: 60px;
 }
 .footer__container{
-    @extend %container;
+    @include container;
 }
 .footer__thumb{
     display: flex;
@@ -22,7 +22,7 @@
     max-height: 81px;
 }
 .footer__list{
-    @extend %list;
+    @include list;
     color: $primary-white;
         text-decoration: none;
         font-style: normal;
@@ -68,7 +68,7 @@ margin-top: 0px;
         align-items: center;
 }
 .footer-soc__list {
-    @extend %list;
+    @include list;
     display: flex;
         justify-content: center;
         align-items: baseline;

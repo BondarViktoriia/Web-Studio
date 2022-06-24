@@ -29,32 +29,52 @@ body {
   line-height: 1.14;
 }
 
-.footer__container, .portfolio__container, .header {
+.header {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgb(236, 236, 236);
+}
+@media screen and (min-width: 480px) {
+  .header {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    width: 1200px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
 }
 
-.footer-soc__list, .footer__list, .portfolio-cards, .portfolio__filtrs-list, .contact-nav, .site-nav {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
+@media screen and (min-width: 768px) {
+  .header__nav {
+    display: flex;
+    align-items: center;
+  }
 }
-
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.header {
-  border-bottom: 1px solid var(--header-border-color);
-}
-
-.header__nav {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 1200px) {
+  .header__nav {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header__logo {
@@ -84,9 +104,26 @@ body {
 }
 
 .site-nav {
-  display: flex;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
   margin-left: 93px;
   position: relative;
+}
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    display: flex;
+  }
 }
 
 .site-nav .site-nav__item:not(:last-child) {
@@ -132,12 +169,29 @@ body {
 }
 
 .contact-nav {
-  display: flex;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
   margin-left: auto;
 }
 .contact-nav .contact-nav__link:focus, .contact-nav .contact-nav__link:hover, .contact-nav .contact-nav__icon:focus, .contact-nav .contact-nav__icon:hover {
   color: #2196f3;
   fill: #2196f3;
+}
+@media screen and (max-width: 767px) {
+  .contact-nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact-nav {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-nav {
+    display: flex;
+  }
 }
 
 .contact-nav__item {
@@ -166,7 +220,37 @@ body {
   cursor: pointer;
 }
 
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.portfolio__container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .portfolio__container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__container {
+    width: 1200px;
+  }
+}
+
 .portfolio__filtrs-list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
@@ -223,6 +307,9 @@ body {
 }
 
 .portfolio-cards {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -330,6 +417,28 @@ body {
   padding-bottom: 60px;
 }
 
+.footer__container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .footer__container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    width: 1200px;
+  }
+}
+
 .footer__thumb {
   display: flex;
   margin: 0;
@@ -344,6 +453,9 @@ body {
 }
 
 .footer__list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
   color: #ffffff;
   text-decoration: none;
   font-style: normal;
@@ -397,6 +509,9 @@ body {
 }
 
 .footer-soc__list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
   display: flex;
   justify-content: center;
   align-items: baseline;

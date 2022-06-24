@@ -1,5 +1,5 @@
 .portfolio-cards{
-    @extend %list;
+    @include list;
     display: flex;
         flex-wrap: wrap;
 }
