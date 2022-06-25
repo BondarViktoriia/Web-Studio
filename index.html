@@ -24,13 +24,27 @@
           <a class="header__logo" href="./index.html"
             >Web<span class="header__studio">Studio</span>
           </a>
-          <button type="button" class="header__menu is-open">
-            <svg class="header__menu-icon" width="40" height="40">
-              <use class="header__menu-close" href="./images/icons.svg#icon-menu-header-close"></use>
-            <use class="header__menu-open" href="./images/icons.svg#icon-menu-header"></use>
+          <button type="button" class="header__menu " aria-expanded="false" aria-controls="header__menu-container" data-menu-button>
+            <svg
+              class="header__menu-icon"
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="header__menu-close"
+                href="./images/icons.svg#icon-menu-header-close"
+              ></use>
+              <use
+                class="header__menu-open"
+                href="./images/icons.svg#icon-menu-header"
+              ></use>
             </svg>
           </button>
-                 <ul class="site-nav">
+          <div class="header__menu-container" id="header__menu-container" data-menu>
+            Контент меню
+          </div>
+          <ul class="site-nav">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link-current"> Студия</a>
             </li>
@@ -577,6 +591,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
-  
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
