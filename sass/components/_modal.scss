@@ -32,7 +32,7 @@
         height: 30px;
         border-radius: 50%;
         border: 1px solid rgba(0, 0, 0, 0.1);
-        background-color: $background-color;
+        background-color: $main-background-color;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -98,7 +98,7 @@
         border-radius: 4px;
         outline: none;
     }
-}
+    }
 
 
 .form__field label {
