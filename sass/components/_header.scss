@@ -5,13 +5,40 @@
   background-color: $background-color;
   border-bottom: 1px solid $header-border-color;
 
+  @media screen  and (max-width: 767px ) {
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 3;
+  }
+
 }
 .header__container {
   @include container;
   display: flex;
   align-items: center;
+ 
+
  }
  .header__nav {
    display: flex;
    align-items: center;
+
+   @media screen  and (max-width: 767px ){
+   position: relative;
+    
+       }
  }
+ .header__menu{
+  position: absolute;
+  transform: translateX(395px);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+ 
+  
+   }
+ 
+  
