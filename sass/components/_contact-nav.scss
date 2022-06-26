@@ -1,42 +1,75 @@
 .contact-nav {
-    display: flex;
-  margin-left: auto;
-
   & .contact-nav__link:focus,
   & .contact-nav__link:hover,
   & .contact-nav__icon:focus,
   & .contact-nav__icon:hover {
     color: $accent-color;
     fill: $accent-color;
+  
   }
-  @media screen and (max-width: 767px) {
-    display: none;
+  @media screen and (max-width:767px){
+    display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin-bottom: 62px;
   }
+     @media screen and (min-width:767px) and (max-width:1199px) {
+       display: block;
+  
+     }
+     @media screen and (min-width:1200px){
+        display: flex;
+          margin-left: auto;
+     }
 }
-
+.contact-nav__list{
+  margin-right: 150px;
+}
 .contact-nav__item {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  
+  }
+@media screen and (min-width:1200px) {
+    .contact-nav__item +.contact-nav__item {
+    margin-left: 50px;
+  }}
 
-.contact-nav__item+.contact-nav__item {
-  margin-left: 50px;
-}
+
 
 .contact-nav__link {
   color: $general-color;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+ 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width:768px) {
+      padding-top: 32px;
+        padding-bottom: 32px;
+    }
 }
 
 .contact-nav__icon {
   margin-right: 10px;
   fill: currentColor;
   cursor: pointer;
+
+  @media screen and (max-width:767px) {
+    display: none;
+  }
+}
+@media screen and (max-width:767px) {
+  .contact-nav .contact-nav__item:not(:first-child) {
+    padding-bottom: 32px;
+  }
+  .contact-nav .contact-nav__item:not(:last-child){
+    font-weight: 500;
+      font-size: 34px;
+      line-height: 1.77;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+  }
 }
