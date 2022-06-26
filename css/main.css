@@ -500,7 +500,8 @@ body {
   list-style: none;
   padding: 0px;
   margin: 0px;
-}
+  display: flex;
+    flex-wrap: nowrap;}
 
 .works__item {
   width: 370px;
@@ -1083,7 +1084,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   .backdrop {
-    maxwidth: 480px;
+    max-width: 480px;
     padding: 93px 15px;
     overflow-y: scroll;
   }
