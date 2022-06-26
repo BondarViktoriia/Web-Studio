@@ -1,10 +1,5 @@
-.clients {
-  @include section;
-}
 
-.clients__container {
-  @include container;
-}
+
 
 .clients__title {
   font-family: "Roboto" sans-serif;
@@ -19,7 +14,7 @@
 }
 
 .clients__list {
-  @include list;
+
   display: flex;
   justify-content: center;
   align-items: center;

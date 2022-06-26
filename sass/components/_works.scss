@@ -1,13 +1,10 @@
 .works {
-  @include section;
-
- @media screen and (max-width:767px) {
+ 
+  @media screen and (max-width:767px) {
   display: none;
  }
 }
-.works__container {
-  @include container;
-}
+
 .works__title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -17,9 +14,10 @@
   letter-spacing: 0.03em;
   color: $secondary-color;
 }
-.works__list {
-  @include list;}
- 
+.works__list{
+  display: flex;
+    flex-wrap: nowrap;
+}
     
 .works__item {
   width: 370px;
@@ -30,6 +28,7 @@
 }
 .works__thumb {
   position: relative;
+
 }
 .works__text {
   font-family: "Roboto";

@@ -1,6 +1,5 @@
 .contact-nav {
-  @include list;
-  display: flex;
+    display: flex;
   margin-left: auto;
 
   & .contact-nav__link:focus,

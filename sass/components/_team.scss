@@ -1,6 +1,5 @@
 .team {
-  @include section;
-  margin-left: auto;
+   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0px;
   background-color: $secondary-background;
@@ -8,9 +7,7 @@
   padding-bottom: 94px;
   padding-left: 15px;
 }
-.team__container {
-  @include container;
-}
+
 .team__title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -23,7 +20,6 @@
   color: $secondary-color;
 }
 .team__thumb {
-  @include list;
   display: flex;
   flex-wrap: wrap;
 }
@@ -64,8 +60,7 @@
   text-align: center;
 }
 .team__icons-list {
-  @include list;
-  display: flex;
+   display: flex;
   justify-content: center;
   align-items: center;
 }

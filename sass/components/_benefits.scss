@@ -1,18 +1,11 @@
-.benefits__container {
-  @include container;
-  @include section;
 
-}
 .benefits__title {
   margin-top: 0;
   margin-bottom: 0;
 
 }
 .benefits__list {
-  @include list;
- 
-
-  @media screen and (min-width:768px){
+   @media screen and (min-width:768px){
     display: flex;
   }
 }

@@ -19,12 +19,12 @@
   <body>
     <!-- Шапка сайта -->
     <header class="header">
-      <div class="header__nav">
+      <div class="header__container container">
         <nav class="header__nav">
           <a class="header__logo" href="./index.html"
             >Web<span class="header__studio">Studio</span>
           </a>
-          <ul class="site-nav">
+          <ul class="site-nav list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link"> Студия</a>
             </li>
@@ -34,7 +34,7 @@
             <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="contact-nav">
+        <ul class="contact-nav list">
           <li class="contact-nav__item">
             <a href="mailto:info@devstudio.com" class="contact-nav__link">
               <svg class="contact-nav__icon" width="16" height="12">
@@ -56,10 +56,10 @@
     </header>
     <main>
       <!-- Фильтры -->
-      <section class="portfolio">
-        <div class="portfolio__container">
+      <section class="portfolio section">
+        <div class="portfolio__container container">
           <h1 class="visually-hidden">Портфолио</h1>
-          <ul class="portfolio__filtrs-list">
+          <ul class="portfolio__filtrs-list list">
             <li class="portfolio__filtrs-item">
               <button type="button" class="link-active portfolio__filtrs-all">Все</button>
             </li>
@@ -77,7 +77,7 @@
             </li>
           </ul>
           <!-- Карточки проектов -->
-          <ul class="portfolio-cards">
+          <ul class="portfolio-cards list">
             <li class="portfolio-cards__item">
               <a href="" class="portfolio-cards__link">
                 <div class="portfolio-cards__thumb">
@@ -285,12 +285,12 @@
     </main>
     <!-- Подвал страницы -->
     <footer class="footer">
-      <div class="footer__container">
+      <div class="footer__container container">
         <div class="footer__thumb">
           <div>
             <a href="./index.html" class="footer__logo">Web<span class="footer__studio">Studio</span></a>
             <address class="footer__address">
-              <ul class="footer__list">
+              <ul class="footer__list list">
                 <li>
                   <p class="footer__adress">г. Киев, пр-т Леси Украинки, 26</p>
                 </li>
@@ -309,7 +309,7 @@
               <p class="footer-soc__join-text">присоединяйтесь</p>
             </div>
             <div class="footer-soc__thumb">
-              <ul class="footer-soc__list">
+              <ul class="footer-soc__list list">
                 <li class="footer-soc__item">
                   <a class="footer-soc__link" href="">
                     <svg class="footer-soc__icon" width="20" height="20">
@@ -356,5 +356,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
