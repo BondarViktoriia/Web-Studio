@@ -4,6 +4,12 @@
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
+
+    @media screen and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.17;
+    }
+
 }
 .header__studio {
     color: $logo-studio;
@@ -19,6 +25,12 @@
         @media screen and (max-width:767px) {
             justify-content: center;
             text-align: center;
+            font-size: 24px;
+            line-height: 1.17;
+        }
+        @media screen and (max-width:1119px){
+            font-size: 24px;
+                line-height: 1.17;
         }
 }
 .footer__studio {

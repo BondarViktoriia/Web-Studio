@@ -214,6 +214,12 @@ header__menu-icon:focus {
   line-height: 1.19;
   text-decoration: none;
 }
+@media screen and (max-width: 1199px) {
+  .header__logo {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
 
 .header__studio {
   color: #000000;
@@ -232,6 +238,14 @@ header__menu-icon:focus {
   .footer__logo {
     justify-content: center;
     text-align: center;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+@media screen and (max-width: 1119px) {
+  .footer__logo {
+    font-size: 24px;
+    line-height: 1.17;
   }
 }
 
