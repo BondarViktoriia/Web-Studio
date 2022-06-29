@@ -13,54 +13,80 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/portfolio.min.css">
-   </head>
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
+  </head>
 
   <body>
     <!-- Шапка сайта -->
     <header class="header">
       <div class="header__container container">
         <div class="header__nav">
-          <a class="header__logo" href="./index.html">Web<span class="header__studio">Studio</span>
+          <a class="header__logo" href="./index.html"
+            >Web<span class="header__studio">Studio</span>
           </a>
-          <button type="button" class="header__menu" aria-expanded="false" aria-controls="header__menu-container"
-            data-menu-button>
-            <svg class="header__menu-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
-              <use class="header__menu-close" href="./images/icons.svg#icon-menu-header-close"></use>
-              <use class="header__menu-open" href="./images/icons.svg#icon-menu-header"></use>
+          <button
+            type="button"
+            class="header__menu"
+            aria-expanded="false"
+            aria-controls="header__menu-container"
+            data-menu-button
+          >
+            <svg
+              class="header__menu-icon"
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="header__menu-close"
+                href="./images/icons.svg#icon-menu-header-close"
+              ></use>
+              <use
+                class="header__menu-open"
+                href="./images/icons.svg#icon-menu-header"
+              ></use>
             </svg>
           </button>
-          <div class="header__menu-container" id="header__menu-container" data-menu>
+          <div
+            class="header__menu-container"
+            id="header__menu-container"
+            data-menu
+          >
             <div class="site-nav__container">
               <nav class="nav">
                 <ul class="site-nav list">
                   <li class="site-nav__item">
-                    <a href="./index.html" class="site-nav__link">
-                      Студия</a>
+                    <a href="./index.html" class="site-nav__link"> Студия</a>
                   </li>
                   <li class="site-nav__item">
-                    <a href="./portfolio.html" class="site-nav__link-current">Портфолио</a>
+                    <a href="./portfolio.html" class="site-nav__link-current"
+                      >Портфолио</a
+                    >
                   </li>
                   <li class="site-nav__item">
                     <a href="" class="site-nav__link">Контакты</a>
                   </li>
                 </ul>
               </nav>
-    
+
               <ul class="contact-nav list">
                 <li class="contact-nav__item">
                   <a href="mailto:info@devstudio.com" class="contact-nav__link">
                     <svg class="contact-nav__icon" width="16" height="12">
                       <use href="./images/icons.svg#icon-mail-icon"></use>
                     </svg>
-                    info@devstudio.com</a>
+                    info@devstudio.com</a
+                  >
                 </li>
                 <li class="contact-nav__item">
-                  <a href="tel:+380961111111" class="contact-nav__link contact-nav__link-tel"><svg class="contact-nav__icon"
-                      width="10" height="16">
+                  <a
+                    href="tel:+380961111111"
+                    class="contact-nav__link contact-nav__link-tel"
+                    ><svg class="contact-nav__icon" width="10" height="16">
                       <use href="./images/icons.svg#icon-tel-icon"></use>
                     </svg>
-                    +38 096 111 11 11</a>
+                    +38 096 111 11 11</a
+                  >
                 </li>
               </ul>
               <ul class="social-nav list">
@@ -74,7 +100,9 @@
                   <a class="social-nav__link" href="">Facebook</a>
                 </li>
                 <li class="social-nav__item">
-                  <a class="social-nav__link social-nav__link--border" href="">LinkedIn</a>
+                  <a class="social-nav__link social-nav__link--border" href=""
+                    >LinkedIn</a
+                  >
                 </li>
               </ul>
             </div>
@@ -89,19 +117,29 @@
           <h1 class="visually-hidden">Портфолио</h1>
           <ul class="portfolio__filtrs-list list">
             <li class="portfolio__filtrs-item">
-              <button type="button" class="link-active portfolio__filtrs-all">Все</button>
+              <button type="button" class="link-active portfolio__filtrs-all">
+                Все
+              </button>
             </li>
             <li class="portfolio__filtrs-item">
-              <button type="button" class="portfolio__filtrs-btn">Веб-сайты</button>
+              <button type="button" class="portfolio__filtrs-btn">
+                Веб-сайты
+              </button>
             </li>
             <li class="portfolio__filtrs-item">
-              <button type="button" class="portfolio__filtrs-btn">Приложения</button>
+              <button type="button" class="portfolio__filtrs-btn">
+                Приложения
+              </button>
             </li>
             <li class="portfolio__filtrs-item">
-              <button type="button" class="portfolio__filtrs-btn">Дизайн</button>
+              <button type="button" class="portfolio__filtrs-btn">
+                Дизайн
+              </button>
             </li>
             <li class="portfolio__filtrs-item">
-              <button type="button" class="portfolio__filtrs-btn">Маркетинг</button>
+              <button type="button" class="portfolio__filtrs-btn">
+                Маркетинг
+              </button>
             </li>
           </ul>
           <!-- Карточки проектов -->
@@ -109,12 +147,45 @@
             <li class="portfolio-cards__item">
               <a href="" class="portfolio-cards__link">
                 <div class="portfolio-cards__thumb">
-                  <img
-                    src="./images/imgpages2-1.jpg"
-                    alt="Компьютер"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/tekhokriak450x294.jpg    1x,
+                        ./images/tekhokriak450x294@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                      sizes="(max-width: 767px) 450px, 100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/tekhokriak354x294.jpg    1x,
+                        ./images/tekhokriak354x294@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="(min-width: 768px) 354px, 50vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/tekhokriak370x294.jpg       1x,
+                        ./images/tekhokriak370x294@270px.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 370px, 33.33vw"
+                    />
+                    <img
+                      srcset="
+                        ./images/tekhokriak354x294.jpg 1x,
+                        ./images/tekhokriak450x294.jpg 1x
+                      "
+                      src="./images/tekhokriak370x294.jpg"
+                      alt="Экран монитора"
+                    />
+                  </picture>
 
                   <p class="portfolio-cards__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -123,7 +194,7 @@
                   </p>
                 </div>
                 <div class="portfolio-cards__box">
-                  <h2 class="portfolio-cards__title ">Технокряк</h2>
+                  <h2 class="portfolio-cards__title">Технокряк</h2>
                   <p class="portfolio-cards__discription">Веб-сайт</p>
                 </div>
               </a>
@@ -132,12 +203,46 @@
             <li class="portfolio-cards__item">
               <a href="" class="portfolio-cards__link">
                 <div class="portfolio-cards__thumb">
-                  <img
-                    src="./images/imgpages2-2.jpg"
-                    alt="Работа дизайнера"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/neworlean450x294.jpg    1x,
+                        ./images/neworlean450x294@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                      sizes="(max-width: 767px) 450px, 100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/neworlean354x294.jpg    1x,
+                        ./images/neworlean354x294@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="(min-width: 768px) 354px, 50vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/neworlean370x294.jpg       1x,
+                        ./images/neworlean370x294@270px.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 370px, 33.33vw"
+                    />
+                    <img
+                      srcset="
+                        ./images/neworlean354x294.jpg 1x,
+                        ./images/neworlean450x294.jpg 1x
+                      "
+                      src="./images/neworlean370x294.jpg"
+                      alt="Работа дизайнера"
+                    />
+                  </picture>
+
                   <p class="portfolio-cards__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -155,12 +260,46 @@
             <li class="portfolio-cards__item">
               <a href="" class="portfolio-cards__link">
                 <div class="portfolio-cards__thumb">
-                  <img
-                    src="./images/imgpages2-3.jpg"
-                    alt="Иконка приложения"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/seafood450x294.jpg    1x,
+                        ./images/seafood450x294@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                      sizes="(max-width: 767px) 450px, 100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/seafood354x294.jpg    1x,
+                        ./images/seafood354x294@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="(min-width: 768px) 354px, 50vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/seafood370x294.jpg       1x,
+                        ./images/seafood370x294@270px.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 370px, 33.33vw"
+                    />
+                    <img
+                      srcset="
+                        ./images/seafood354x294.jpg 1x,
+                        ./images/seafood450x294.jpg 1x
+                      "
+                      src="./images/seafood370x294.jpg"
+                      alt="Сайт ресторана"
+                    />
+                  </picture>
+
                   <p class="portfolio-cards__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -168,9 +307,7 @@
                   </p>
                 </div>
                 <div class="portfolio-cards__box">
-                  <h2 class="portfolio-cards__title">
-                    Ресторан Seafood
-                  </h2>
+                  <h2 class="portfolio-cards__title">Ресторан Seafood</h2>
                   <p class="portfolio-cards__discription">Приложение</p>
                 </div>
               </a>
@@ -178,12 +315,46 @@
             <li class="portfolio-cards__item">
               <a href="" class="portfolio-cards__link">
                 <div class="portfolio-cards__thumb">
-                  <img
-                    src="./images/imgpages2-4.jpg"
-                    alt="Наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/prime450x294.jpg    1x,
+                        ./images/prime450x294@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                      sizes="(max-width: 767px) 450px, 100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/prime354x294.jpg    1x,
+                        ./images/prime354x294@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="(min-width: 768px) 354px, 50vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/prime370x294.jpg       1x,
+                        ./images/prime370x294@270px.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 370px, 33.33vw"
+                    />
+                    <img
+                      srcset="
+                        ./images/prime354x294.jpg 1x,
+                        ./images/prime450x294.jpg 1x
+                      "
+                      src="./images/prime370x294.jpg"
+                      alt="Наушники"
+                    />
+                  </picture>
+
                   <p class="portfolio-cards__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -199,12 +370,46 @@
             <li class="portfolio-cards__item">
               <a href="" class="portfolio-cards__link">
                 <div class="portfolio-cards__thumb">
-                  <img
-                    src="./images/imgpages2-5.jpg"
-                    alt="Две коробочки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/boxes450x294.jpg    1x,
+                        ./images/boxes450x294@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                      sizes="(max-width: 767px) 450px, 100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/boxes354x294.jpg    1x,
+                        ./images/boxes354x294@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="(min-width: 768px) 354px, 50vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/boxes370x294.jpg       1x,
+                        ./images/boxes370x294@270px.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 370px, 33.33vw"
+                    />
+                    <img
+                      srcset="
+                        ./images/boxes354x294.jpg 1x,
+                        ./images/boxes450x294.jpg 1x
+                      "
+                      src="./images/boxes370x294.jpg"
+                      alt="Две коробочки"
+                    />
+                  </picture>
+
                   <p class="portfolio-cards__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -217,15 +422,49 @@
                 </div>
               </a>
             </li>
-            <li class=" portfolio-cards__item">
+            <li class="portfolio-cards__item">
               <a href="" class="portfolio-cards__link">
                 <div class="portfolio-cards__thumb">
-                  <img
-                    src="./images/imgpages2-6.jpg "
-                    alt="Монитор компьютера"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/inspiration450x294.jpg    1x,
+                        ./images/inspiration450x294@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                      sizes="(max-width: 767px) 450px, 100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/inspiration354x294.jpg    1x,
+                        ./images/inspiration354x294@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="(min-width: 768px) 354px, 50vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/inspiration370x294.jpg       1x,
+                        ./images/inspiration370x294@270px.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 370px, 33.33vw"
+                    />
+                    <img
+                      srcset="
+                        ./images/inspiration354x294.jpg 1x,
+                        ./images/inspiration450x294.jpg 1x
+                      "
+                      src="./images/inspiration370x294.jpg"
+                      alt="Монитор компьютера"
+                    />
+                  </picture>
+
                   <p class="portfolio-cards__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -240,15 +479,49 @@
                 </div>
               </a>
             </li>
-            <li class=" portfolio-cards__item">
+            <li class="portfolio-cards__item">
               <a href="" class="portfolio-cards__link">
                 <div class="portfolio-cards__thumb">
-                  <img
-                    src="./images/imgpages2-7.jpg "
-                    alt="Журнал"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/limmired450x294.jpg    1x,
+                        ./images/limmired450x294@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                      sizes="(max-width: 767px) 450px, 100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/limmired354x294.jpg    1x,
+                        ./images/limmired354x294@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="(min-width: 768px) 354px, 50vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/limmired370x294.jpg       1x,
+                        ./images/limmired370x294@270px.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 370px, 33.33vw"
+                    />
+                    <img
+                      srcset="
+                        ./images/limmired354x294.jpg 1x,
+                        ./images/limmired450x294.jpg 1x
+                      "
+                      src="./images/limmired370x294.jpg"
+                      alt="Журнал"
+                    />
+                  </picture>
+
                   <p class="portfolio-cards__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -266,12 +539,46 @@
             <li class="portfolio-cards__item">
               <a href="" class="portfolio-cards__link">
                 <div class="portfolio-cards__thumb">
-                  <img
-                    src="./images/imgpages2-8.jpg"
-                    alt="Бирка"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/lab450x294.jpg    1x,
+                        ./images/lab450x294@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                      sizes="(max-width: 767px) 450px, 100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/lab354x294.jpg    1x,
+                        ./images/lab354x294@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="(min-width: 768px) 354px, 50vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/lab370x294.jpg       1x,
+                        ./images/lab370x294@270px.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 370px, 33.33vw"
+                    />
+                    <img
+                      srcset="
+                        ./images/lab354x294.jpg 1x,
+                        ./images/lab450x294.jpg 1x
+                      "
+                      src="./images/lab370x294.jpg"
+                      alt="Бирка"
+                    />
+                  </picture>
+
                   <p class="portfolio-cards__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -287,12 +594,46 @@
             <li class="portfolio-cards__item">
               <a href="" class="portfolio-cards__link">
                 <div class="portfolio-cards__thumb">
-                  <img
-                    src="./images/imgpages2-9.jpg "
-                    alt="Работа на компьютере"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/growing450x294.jpg    1x,
+                        ./images/growing450x294@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                      sizes="(max-width: 767px) 450px, 100vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/growing354x294.jpg    1x,
+                        ./images/growing354x294@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="(min-width: 768px) 354px, 50vw"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/lab370x294.jpg       1x,
+                        ./images/lab370x294@270px.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 370px, 33.33vw"
+                    />
+                    <img
+                      srcset="
+                        ./images/growing354x294.jpg 1x,
+                        ./images/growing450x294.jpg 1x
+                      "
+                      src="./images/growing370x294.jpg"
+                      alt="Работа на компьютере"
+                    />
+                  </picture>
+
                   <p class="portfolio-cards__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -316,17 +657,22 @@
       <div class="footer__container container">
         <div class="footer__thumb">
           <div>
-            <a href="./index.html" class="footer__logo">Web<span class="footer__studio">Studio</span></a>
+            <a href="./index.html" class="footer__logo"
+              >Web<span class="footer__studio">Studio</span></a
+            >
             <address class="footer__contact">
               <ul class="footer__list list">
                 <li>
                   <p class="footer__adress">г. Киев, пр-т Леси Украинки, 26</p>
                 </li>
                 <li>
-                  <a class="footer__mail" href="mailto:info@example.com">info@example.com</a>
+                  <a class="footer__mail" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
                 </li>
                 <li>
-                  <a class="footer__tel" href="tel:+380991111111">+38 099 111 11 11
+                  <a class="footer__tel" href="tel:+380991111111"
+                    >+38 099 111 11 11
                   </a>
                 </li>
               </ul>
@@ -372,7 +718,12 @@
           <form class="footer-form">
             <p class="footer-form__title">Подпишитесь на рассылку</p>
             <label class="footer-form__email">
-              <input type="email" name="form-footer-email" class="footer-form__input" placeholder="E-mail" />
+              <input
+                type="email"
+                name="form-footer-email"
+                class="footer-form__input"
+                placeholder="E-mail"
+              />
             </label>
             <button type="submit" class="footer-form__button">
               <span class="footer-form__button-text">Подписаться</span>
