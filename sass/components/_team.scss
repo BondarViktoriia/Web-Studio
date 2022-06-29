@@ -6,6 +6,11 @@
   padding-right: 15px;
   padding-bottom: 94px;
   padding-left: 15px;
+  @media screen and (max-width:767px) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 60px;
+  }
 }
 
 .team__title {
@@ -31,6 +36,10 @@
 .team__thumb {
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (max-width:767px){
+    max-width: 100%;
+  }
 }
 .team__list {
   width: 270px;
@@ -40,6 +49,16 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: $primary-white;
+
+ 
+  @media screen and (max-width:767px)  {
+    width:450px;
+    margin-right: 0;
+    &:not(:last-child){
+      margin-bottom: 30px;
+    }
+
+  }
 }
 .team__list:nth-child(4) {
   margin-right: 0px;
@@ -47,6 +66,11 @@
 .team__inform {
   padding-top: 30px;
   padding-bottom: 30px;
+
+  @media screen and (max-width:767px) {
+    padding-top: 30px;
+      padding-bottom: 24px;
+  }
 }
 .team__sabtitle {
   margin-top: 0px;
@@ -57,6 +81,8 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
+
+ 
 }
 .team__position {
   margin-top: 0;
