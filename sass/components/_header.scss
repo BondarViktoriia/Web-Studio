@@ -35,7 +35,6 @@
   z-index: 2;
   text-align: center;
   justify-content: center;
-  
 
   & .header__menu-close {
     display: none;
@@ -52,9 +51,20 @@
 }
 
 .header__menu-container {
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
   background-color: $background-color;
-
+  .site-nav__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    overflow-y: auto;
+  }
   &.is-open {
     display: block;
   }

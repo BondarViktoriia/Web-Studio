@@ -1,12 +1,12 @@
 .team {
-   margin-left: auto;
+  margin-left: auto;
   margin-right: auto;
   margin-bottom: 0px;
   background-color: $secondary-background;
   padding-right: 15px;
   padding-bottom: 94px;
   padding-left: 15px;
-  @media screen and (max-width:767px) {
+  @media screen and (max-width: 767px) {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 60px;
@@ -24,20 +24,17 @@
   letter-spacing: 0.03em;
   color: $secondary-color;
 
-  @media screen and (max-width:1199px) {
-   
-        font-size: 28px;
-        line-height: 1.18;
-        margin-bottom: 30px;
-   
+  @media screen and (max-width: 1199px) {
+    font-size: 28px;
+    line-height: 1.18;
+    margin-bottom: 30px;
   }
-
 }
 .team__thumb {
   display: flex;
   flex-wrap: wrap;
 
-  @media screen and (max-width:767px){
+  @media screen and (max-width: 767px) {
     max-width: 100%;
   }
 }
@@ -50,14 +47,12 @@
   border-radius: 0px 0px 4px 4px;
   background-color: $primary-white;
 
- 
-  @media screen and (max-width:767px)  {
-    width:450px;
+  @media screen and (max-width: 767px) {
+    width: 450px;
     margin-right: 0;
-    &:not(:last-child){
+    &:not(:last-child) {
       margin-bottom: 30px;
     }
-
   }
 }
 .team__list:nth-child(4) {
@@ -67,9 +62,9 @@
   padding-top: 30px;
   padding-bottom: 30px;
 
-  @media screen and (max-width:767px) {
+  @media screen and (max-width: 767px) {
     padding-top: 30px;
-      padding-bottom: 24px;
+    padding-bottom: 24px;
   }
 }
 .team__sabtitle {
@@ -81,8 +76,6 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
-
- 
 }
 .team__position {
   margin-top: 0;
@@ -95,7 +88,7 @@
   text-align: center;
 }
 .team__icons-list {
-   display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -121,10 +114,10 @@
     background-color: $accent-color;
     border-radius: 50%;
   }
-    &:hover .team__icon,
-    &:focus .team__icon {
-      fill: $primary-white;
-    }
+  &:hover .team__icon,
+  &:focus .team__icon {
+    fill: $primary-white;
+  }
 }
 
 .team__icon {
@@ -133,4 +126,3 @@
   justify-content: center;
   fill: #afb1b8;
 }
-
