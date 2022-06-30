@@ -1,8 +1,7 @@
 .works {
- 
-  @media screen and (max-width:767px) {
-  display: none;
- }
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .works__title {
@@ -18,7 +17,7 @@
   display: flex;
   flex-wrap: nowrap;
 }
-    
+
 .works__item {
   width: 370px;
   position: relative;
@@ -28,7 +27,6 @@
 }
 .works__thumb {
   position: relative;
-
 }
 .works__text {
   font-family: "Roboto";
@@ -49,6 +47,6 @@
   padding-top: 27px;
   padding-bottom: 27px;
   background-color: rgba(47, 48, 58, 0.8);
-   bottom: 0;
+  bottom: 0;
   left: 0;
 }

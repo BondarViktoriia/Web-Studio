@@ -110,6 +110,16 @@ body {
   min-height: 60px;
 }
 
+@media screen and (max-width: 767px) {
+  .header__menu-container .site-nav__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    overflow-y: auto;
+  }
+}
+
 .header__menu {
   border: none;
   cursor: pointer;
@@ -145,13 +155,6 @@ body {
   height: 100vh;
   background-color: #ffffff;
 }
-.header__menu-container .site-nav__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  overflow-y: auto;
-}
 .header__menu-container.is-open {
   display: block;
 }
@@ -164,6 +167,11 @@ body {
     width: 100%;
     padding: 48px 40px;
     text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__menu-container {
+    display: none;
   }
 }
 
@@ -221,6 +229,17 @@ header__menu-icon:focus {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #2196f3;
+}
+
+@media screen and (max-width: 767px) {
+  .tablet-desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tablet-desktop {
+    display: flex;
+  }
 }
 
 .header__logo {
@@ -307,7 +326,7 @@ header__menu-icon:focus {
 @media screen and (max-width: 767px) {
   .site-nav__link {
     font-size: 40px;
-    lline-height: 1.18;
+    line-height: 1.18;
     letter-spacing: 0.02em;
   }
 }
@@ -315,6 +334,10 @@ header__menu-icon:focus {
   .site-nav__link {
     padding-top: 32px;
     padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -375,12 +398,17 @@ header__menu-icon:focus {
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .contact-nav {
     display: block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 21px;
+    margin-bottom: 21px;
   }
 }
 @media screen and (min-width: 1200px) {
   .contact-nav {
     display: flex;
     margin-left: auto;
+    align-items: baseline;
   }
 }
 
@@ -391,7 +419,14 @@ header__menu-icon:focus {
 .contact-nav__item {
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .contact-nav__item {
+    justify-content: flex-start;
+  }
+  .contact-nav__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -399,6 +434,7 @@ header__menu-icon:focus {
     margin-left: 50px;
   }
 }
+
 .contact-nav__link {
   color: #757575;
   text-decoration: none;
@@ -415,8 +451,17 @@ header__menu-icon:focus {
 }
 @media screen and (min-width: 768px) {
   .contact-nav__link {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .contact-nav__link {
     padding-top: 32px;
     padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -565,19 +610,29 @@ header__menu-icon:focus {
 @media screen and (min-width: 768px) {
   .benefits__list {
     display: flex;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .benefits__item:not(:last-child) {
-    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .benefits__item:not(:last-child) {
-    margin-right: 30px;
+  .benefits__list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    width: calc((100% - 90px) / 4);
+  }
+}
+
 .benefits__thumb {
   content: "";
   border: none;
@@ -590,6 +645,11 @@ header__menu-icon:focus {
   align-items: center;
 }
 @media screen and (max-width: 767px) {
+  .benefits__thumb {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .benefits__thumb {
     width: 100%;
   }
@@ -634,7 +694,7 @@ header__menu-icon:focus {
   line-height: 1.71;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .works {
     display: none;
   }
@@ -700,7 +760,7 @@ header__menu-icon:focus {
   padding-bottom: 94px;
   padding-left: 15px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .team {
     padding-left: 0;
     padding-right: 0;
@@ -736,6 +796,12 @@ header__menu-icon:focus {
     max-width: 100%;
   }
 }
+@media screen and (max-width: 1199px) {
+  .team__thumb {
+    max-width: 100%;
+    gap: 30px;
+  }
+}
 
 .team__list {
   width: 270px;
@@ -754,6 +820,12 @@ header__menu-icon:focus {
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__list {
+    width: calc((100% - 30px) / 2);
+    margin-right: 0;
+  }
+}
 
 .team__list:nth-child(4) {
   margin-right: 0px;
@@ -763,7 +835,7 @@ header__menu-icon:focus {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .team__inform {
     padding-top: 30px;
     padding-bottom: 24px;
@@ -857,8 +929,14 @@ header__menu-icon:focus {
 }
 @media screen and (max-width: 767px) {
   .clients__list {
-    margin: -15px;
     flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__list {
+    flex-wrap: wrap;
+    gap: 30px;
   }
 }
 
@@ -866,17 +944,20 @@ header__menu-icon:focus {
   display: flex;
   width: 170px;
   height: 92px;
-  margin-right: 30px;
   border: 1px solid rgb(175, 177, 184);
   border-radius: 4px;
 }
 .clients__item:hover, .clients__item:focus {
   border: 1px solid rgb(33, 150, 243);
 }
-@media screen and (max-width: 797px) {
+@media screen and (max-width: 767px) {
   .clients__item {
-    width: calc((100% - 60px) / 2);
-    margin: 15px;
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients__item {
+    width: calc((100% - 60px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -921,6 +1002,17 @@ header__menu-icon:focus {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-form-wrap {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form-wrap {
+    display: flex;
+  }
+}
+
 .footer__thumb {
   display: flex;
   margin: 0;
@@ -929,6 +1021,11 @@ header__menu-icon:focus {
 @media screen and (max-width: 767px) {
   .footer__thumb {
     display: block;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__thumb {
+    justify-content: center;
   }
 }
 
@@ -972,14 +1069,21 @@ header__menu-icon:focus {
   font-style: normal;
 }
 
-.footer-soc {
-  margin-left: 70px;
-}
 @media screen and (max-width: 767px) {
   .footer-soc {
     justify-content: center;
     text-align: center;
     margin: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-soc {
+    margin-left: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-soc {
+    margin-left: 70px;
   }
 }
 
@@ -1063,6 +1167,13 @@ header__menu-icon:focus {
     padding: 0px 15px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-form {
+    padding-top: 60px;
+    justify-content: center;
+    text-align: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-form {
     min-width: 570px;
@@ -1135,6 +1246,14 @@ header__menu-icon:focus {
     transform: translateX(120px);
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-form__button {
+    display: block;
+    margin-top: 20px;
+    position: relative;
+    transform: translateX(268px);
+  }
+}
 
 .footer-form__button-text {
   font-weight: 700;
@@ -1166,6 +1285,11 @@ header__menu-icon:focus {
 @media screen and (max-width: 767px) {
   .backdrop {
     padding: 93px 15px 94px 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+  .backdrop {
+    padding: 208px 159px 207px 159px;
   }
 }
 
@@ -1246,7 +1370,7 @@ header__menu-icon:focus {
     margin: 0;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .form {
     width: 450px;
     height: 609px;

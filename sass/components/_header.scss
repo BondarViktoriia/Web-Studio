@@ -25,6 +25,15 @@
   min-width: 450px;
   min-height: 60px;
 }
+.header__menu-container .site-nav__container {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    overflow-y: auto;
+  }
+}
 .header__menu {
   border: none;
   cursor: pointer;
@@ -58,13 +67,7 @@
   width: 100vw;
   height: 100vh;
   background-color: $background-color;
-  .site-nav__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    overflow-y: auto;
-  }
+
   &.is-open {
     display: block;
   }
@@ -77,7 +80,11 @@
     padding: 48px 40px;
     text-align: center;
   }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
+
 .nav {
   @media screen and (max-width: 767px) {
   }
@@ -134,4 +141,12 @@ header__menu-icon:focus {
   text-decoration: none;
 
   color: $accent-color;
+}
+.tablet-desktop {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }

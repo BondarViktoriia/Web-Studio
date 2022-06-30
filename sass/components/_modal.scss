@@ -12,6 +12,9 @@
   @media screen and (max-width: 767px) {
     padding: 93px 15px 94px 15px;
   }
+  @media screen and (min-width: 768px) and (max-width: 1119px) {
+    padding: 208px 159px 207px 159px;
+  }
 }
 .backdrop.is-hidden {
   visibility: hidden;
@@ -81,7 +84,7 @@
     height: 609px;
     margin: 0;
   }
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 450px;
     height: 609px;
     margin: 0;

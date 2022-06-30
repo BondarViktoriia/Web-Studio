@@ -6,7 +6,7 @@
   padding-right: 15px;
   padding-bottom: 94px;
   padding-left: 15px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 60px;
@@ -37,6 +37,10 @@
   @media screen and (max-width: 767px) {
     max-width: 100%;
   }
+  @media screen and (max-width: 1199px) {
+    max-width: 100%;
+    gap: 30px;
+  }
 }
 .team__list {
   width: 270px;
@@ -54,6 +58,10 @@
       margin-bottom: 30px;
     }
   }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 30px) / 2);
+    margin-right: 0;
+  }
 }
 .team__list:nth-child(4) {
   margin-right: 0px;
@@ -62,7 +70,7 @@
   padding-top: 30px;
   padding-bottom: 30px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     padding-top: 30px;
     padding-bottom: 24px;
   }

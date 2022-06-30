@@ -21,94 +21,103 @@
     <header class="header">
       <div class="header__container container">
         <div class="header__nav">
-          <a class="header__logo" href="./index.html"
-            >Web<span class="header__studio">Studio</span>
+          <a class="header__logo" href="./index.html">Web<span class="header__studio">Studio</span>
           </a>
-          <button
-            type="button"
-            class="header__menu"
-            aria-expanded="false"
-            aria-controls="header__menu-container"
-            data-menu-button
-          >
-            <svg
-              class="header__menu-icon"
-              width="40"
-              height="40"
-              aria-label="Переключатель мобильного меню"
-            >
-              <use
-                class="header__menu-close"
-                href="./images/icons.svg#icon-menu-header-close"
-              ></use>
-              <use
-                class="header__menu-open"
-                href="./images/icons.svg#icon-menu-header"
-              ></use>
+          <button type="button" class="header__menu" aria-expanded="false" aria-controls="header__menu-container"
+            data-menu-button>
+            <svg class="header__menu-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="header__menu-close" href="./images/icons.svg#icon-menu-header-close"></use>
+              <use class="header__menu-open" href="./images/icons.svg#icon-menu-header"></use>
             </svg>
           </button>
-          <div
-            class="header__menu-container"
-            id="header__menu-container"
-            data-menu
-          >
+          <div class="header__menu-container" id="header__menu-container" data-menu>
             <div class="site-nav__container">
-              <nav class="nav">
-                <ul class="site-nav list">
-                  <li class="site-nav__item">
-                    <a href="./index.html" class="site-nav__link"> Студия</a>
+              <div class="mob-menu-top">
+                <nav class="nav">
+                  <ul class="site-nav list">
+                    <li class="site-nav__item">
+                      <a href="./index.html" class="site-nav__link">
+                        Студия</a>
+                    </li>
+                    <li class="site-nav__item">
+                      <a href="./portfolio.html" class="site-nav__link-current">Портфолио</a>
+                    </li>
+                    <li class="site-nav__item">
+                      <a href="" class="site-nav__link">Контакты</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="mob-menu-button">
+                <ul class="contact-nav list">
+                  <li class="contact-nav__item">
+                    <a href="mailto:info@devstudio.com" class="contact-nav__link">
+                      <svg class="contact-nav__icon" width="16" height="12">
+                        <use href="./images/icons.svg#icon-mail-icon"></use>
+                      </svg>
+                      info@devstudio.com</a>
                   </li>
-                  <li class="site-nav__item">
-                    <a href="./portfolio.html" class="site-nav__link-current"
-                      >Портфолио</a
-                    >
-                  </li>
-                  <li class="site-nav__item">
-                    <a href="" class="site-nav__link">Контакты</a>
+                  <li class="contact-nav__item">
+                    <a href="tel:+380961111111" class="contact-nav__link contact-nav__link-tel"><svg
+                        class="contact-nav__icon" width="10" height="16">
+                        <use href="./images/icons.svg#icon-tel-icon"></use>
+                      </svg>
+                      +38 096 111 11 11</a>
                   </li>
                 </ul>
-              </nav>
-
-              <ul class="contact-nav list">
-                <li class="contact-nav__item">
-                  <a href="mailto:info@devstudio.com" class="contact-nav__link">
-                    <svg class="contact-nav__icon" width="16" height="12">
-                      <use href="./images/icons.svg#icon-mail-icon"></use>
-                    </svg>
-                    info@devstudio.com</a
-                  >
-                </li>
-                <li class="contact-nav__item">
-                  <a
-                    href="tel:+380961111111"
-                    class="contact-nav__link contact-nav__link-tel"
-                    ><svg class="contact-nav__icon" width="10" height="16">
-                      <use href="./images/icons.svg#icon-tel-icon"></use>
-                    </svg>
-                    +38 096 111 11 11</a
-                  >
-                </li>
-              </ul>
-              <ul class="social-nav list">
-                <li class="social-nav__item">
-                  <a class="social-nav__link" href="">Instagram</a>
-                </li>
-                <li class="social-nav__item">
-                  <a class="social-nav__link" href="">Twitter</a>
-                </li>
-                <li class="social-nav__item">
-                  <a class="social-nav__link" href="">Facebook</a>
-                </li>
-                <li class="social-nav__item">
-                  <a class="social-nav__link social-nav__link--border" href=""
-                    >LinkedIn</a
-                  >
-                </li>
-              </ul>
+                <ul class="social-nav list">
+                  <li class="social-nav__item">
+                    <a class="social-nav__link" href="">Instagram</a>
+                  </li>
+                  <li class="social-nav__item">
+                    <a class="social-nav__link" href="">Twitter</a>
+                  </li>
+                  <li class="social-nav__item">
+                    <a class="social-nav__link" href="">Facebook</a>
+                  </li>
+                  <li class="social-nav__item">
+                    <a class="social-nav__link social-nav__link--border" href="">LinkedIn</a>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
+    
+          <div class="tablet-desktop">
+            <nav class="nav">
+              <ul class="site-nav list">
+                <li class="site-nav__item">
+                  <a href="./index.html" class="site-nav__link">
+                    Студия</a>
+                </li>
+                <li class="site-nav__item">
+                  <a href="./portfolio.html" class="site-nav__link-current">Портфолио</a>
+                </li>
+                <li class="site-nav__item">
+                  <a href="" class="site-nav__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="contact-nav list">
+              <li class="contact-nav__item">
+                <a href="mailto:info@devstudio.com" class="contact-nav__link">
+                  <svg class="contact-nav__icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-mail-icon"></use>
+                  </svg>
+                  info@devstudio.com</a>
+              </li>
+              <li class="contact-nav__item">
+                <a href="tel:+380961111111" class="contact-nav__link contact-nav__link-tel"><svg class="contact-nav__icon"
+                    width="10" height="16">
+                    <use href="./images/icons.svg#icon-tel-icon"></use>
+                  </svg>
+                  +38 096 111 11 11</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+    
     </header>
     <main>
       <!-- Фильтры -->
@@ -155,7 +164,7 @@
                       "
                       type="image/jpeg"
                       media="(max-width: 767px)"
-                      sizes="(max-width: 767px) 450px, 100vw"
+                
                     />
 
                     <source
@@ -165,7 +174,7 @@
                       "
                       type="image/jpeg"
                       media="(min-width: 768px) and (max-width: 1199px)"
-                      sizes="(min-width: 768px) 354px, 50vw"
+                     
                     />
 
                     <source
@@ -175,12 +184,12 @@
                       "
                       type="image/jpg"
                       media="(min-width: 1200px)"
-                      sizes="(min-width: 1200px) 370px, 33.33vw"
+                      
                     />
                     <img
                       srcset="
                         ./images/tekhokriak354x294.jpg 1x,
-                        ./images/tekhokriak450x294.jpg 1x
+                        ./images/tekhokriak450x294.jpg 2x
                       "
                       src="./images/tekhokriak370x294.jpg"
                       alt="Экран монитора"
@@ -211,7 +220,7 @@
                       "
                       type="image/jpeg"
                       media="(max-width: 767px)"
-                      sizes="(max-width: 767px) 450px, 100vw"
+                     
                     />
 
                     <source
@@ -221,7 +230,7 @@
                       "
                       type="image/jpeg"
                       media="(min-width: 768px) and (max-width: 1199px)"
-                      sizes="(min-width: 768px) 354px, 50vw"
+                     
                     />
 
                     <source
@@ -231,12 +240,12 @@
                       "
                       type="image/jpg"
                       media="(min-width: 1200px)"
-                      sizes="(min-width: 1200px) 370px, 33.33vw"
+                      
                     />
                     <img
                       srcset="
                         ./images/neworlean354x294.jpg 1x,
-                        ./images/neworlean450x294.jpg 1x
+                        ./images/neworlean450x294.jpg 2x
                       "
                       src="./images/neworlean370x294.jpg"
                       alt="Работа дизайнера"
@@ -268,7 +277,7 @@
                       "
                       type="image/jpeg"
                       media="(max-width: 767px)"
-                      sizes="(max-width: 767px) 450px, 100vw"
+                     
                     />
 
                     <source
@@ -278,7 +287,7 @@
                       "
                       type="image/jpeg"
                       media="(min-width: 768px) and (max-width: 1199px)"
-                      sizes="(min-width: 768px) 354px, 50vw"
+                     
                     />
 
                     <source
@@ -288,12 +297,12 @@
                       "
                       type="image/jpg"
                       media="(min-width: 1200px)"
-                      sizes="(min-width: 1200px) 370px, 33.33vw"
+                      
                     />
                     <img
                       srcset="
                         ./images/seafood354x294.jpg 1x,
-                        ./images/seafood450x294.jpg 1x
+                        ./images/seafood450x294.jpg 2x
                       "
                       src="./images/seafood370x294.jpg"
                       alt="Сайт ресторана"
@@ -323,7 +332,7 @@
                       "
                       type="image/jpeg"
                       media="(max-width: 767px)"
-                      sizes="(max-width: 767px) 450px, 100vw"
+                    
                     />
 
                     <source
@@ -333,22 +342,22 @@
                       "
                       type="image/jpeg"
                       media="(min-width: 768px) and (max-width: 1199px)"
-                      sizes="(min-width: 768px) 354px, 50vw"
+                    
                     />
 
                     <source
+                
                       srcset="
                         ./images/prime370x294.jpg       1x,
                         ./images/prime370x294@270px.jpg 2x
                       "
                       type="image/jpg"
                       media="(min-width: 1200px)"
-                      sizes="(min-width: 1200px) 370px, 33.33vw"
-                    />
+                      />
                     <img
                       srcset="
-                        ./images/prime354x294.jpg 1x,
-                        ./images/prime450x294.jpg 1x
+                        ./images/prime354x294.jpg ,
+                        ./images/prime450x294.jpg
                       "
                       src="./images/prime370x294.jpg"
                       alt="Наушники"
@@ -378,7 +387,7 @@
                       "
                       type="image/jpeg"
                       media="(max-width: 767px)"
-                      sizes="(max-width: 767px) 450px, 100vw"
+                 
                     />
 
                     <source
@@ -388,7 +397,7 @@
                       "
                       type="image/jpeg"
                       media="(min-width: 768px) and (max-width: 1199px)"
-                      sizes="(min-width: 768px) 354px, 50vw"
+                    
                     />
 
                     <source
@@ -398,12 +407,12 @@
                       "
                       type="image/jpg"
                       media="(min-width: 1200px)"
-                      sizes="(min-width: 1200px) 370px, 33.33vw"
+                    
                     />
                     <img
                       srcset="
-                        ./images/boxes354x294.jpg 1x,
-                        ./images/boxes450x294.jpg 1x
+                        ./images/boxes354x294.jpg ,
+                        ./images/boxes450x294.jpg 
                       "
                       src="./images/boxes370x294.jpg"
                       alt="Две коробочки"
@@ -433,7 +442,7 @@
                       "
                       type="image/jpeg"
                       media="(max-width: 767px)"
-                      sizes="(max-width: 767px) 450px, 100vw"
+                      
                     />
 
                     <source
@@ -443,7 +452,7 @@
                       "
                       type="image/jpeg"
                       media="(min-width: 768px) and (max-width: 1199px)"
-                      sizes="(min-width: 768px) 354px, 50vw"
+                    
                     />
 
                     <source
@@ -453,12 +462,12 @@
                       "
                       type="image/jpg"
                       media="(min-width: 1200px)"
-                      sizes="(min-width: 1200px) 370px, 33.33vw"
+                      
                     />
                     <img
                       srcset="
-                        ./images/inspiration354x294.jpg 1x,
-                        ./images/inspiration450x294.jpg 1x
+                        ./images/inspiration354x294.jpg ,
+                        ./images/inspiration450x294.jpg 
                       "
                       src="./images/inspiration370x294.jpg"
                       alt="Монитор компьютера"
@@ -490,7 +499,7 @@
                       "
                       type="image/jpeg"
                       media="(max-width: 767px)"
-                      sizes="(max-width: 767px) 450px, 100vw"
+                     
                     />
 
                     <source
@@ -500,7 +509,7 @@
                       "
                       type="image/jpeg"
                       media="(min-width: 768px) and (max-width: 1199px)"
-                      sizes="(min-width: 768px) 354px, 50vw"
+                     
                     />
 
                     <source
@@ -510,12 +519,12 @@
                       "
                       type="image/jpg"
                       media="(min-width: 1200px)"
-                      sizes="(min-width: 1200px) 370px, 33.33vw"
+                   
                     />
                     <img
                       srcset="
-                        ./images/limmired354x294.jpg 1x,
-                        ./images/limmired450x294.jpg 1x
+                        ./images/limmired354x294.jpg ,
+                        ./images/limmired450x294.jpg 
                       "
                       src="./images/limmired370x294.jpg"
                       alt="Журнал"
@@ -547,7 +556,7 @@
                       "
                       type="image/jpeg"
                       media="(max-width: 767px)"
-                      sizes="(max-width: 767px) 450px, 100vw"
+                   
                     />
 
                     <source
@@ -557,7 +566,7 @@
                       "
                       type="image/jpeg"
                       media="(min-width: 768px) and (max-width: 1199px)"
-                      sizes="(min-width: 768px) 354px, 50vw"
+                     
                     />
 
                     <source
@@ -567,12 +576,12 @@
                       "
                       type="image/jpg"
                       media="(min-width: 1200px)"
-                      sizes="(min-width: 1200px) 370px, 33.33vw"
+                 
                     />
                     <img
                       srcset="
-                        ./images/lab354x294.jpg 1x,
-                        ./images/lab450x294.jpg 1x
+                        ./images/lab354x294.jpg ,
+                        ./images/lab450x294.jpg
                       "
                       src="./images/lab370x294.jpg"
                       alt="Бирка"
@@ -602,7 +611,7 @@
                       "
                       type="image/jpeg"
                       media="(max-width: 767px)"
-                      sizes="(max-width: 767px) 450px, 100vw"
+                 
                     />
 
                     <source
@@ -612,22 +621,22 @@
                       "
                       type="image/jpeg"
                       media="(min-width: 768px) and (max-width: 1199px)"
-                      sizes="(min-width: 768px) 354px, 50vw"
+
                     />
 
                     <source
                       srcset="
-                        ./images/lab370x294.jpg       1x,
-                        ./images/lab370x294@270px.jpg 2x
+                        ./images/growing370x294.jpg       1x,
+                        ./images/growing370x294@270px.jpg 2x
                       "
                       type="image/jpg"
                       media="(min-width: 1200px)"
-                      sizes="(min-width: 1200px) 370px, 33.33vw"
+
                     />
                     <img
                       srcset="
-                        ./images/growing354x294.jpg 1x,
-                        ./images/growing450x294.jpg 1x
+                        ./images/growing354x294.jpg ,
+                        ./images/growing450x294.jpg 
                       "
                       src="./images/growing370x294.jpg"
                       alt="Работа на компьютере"
@@ -655,75 +664,67 @@
     <!-- Подвал страницы -->
     <footer class="footer">
       <div class="footer__container container">
-        <div class="footer__thumb">
-          <div>
-            <a href="./index.html" class="footer__logo"
-              >Web<span class="footer__studio">Studio</span></a
-            >
-            <address class="footer__contact">
-              <ul class="footer__list list">
-                <li>
-                  <p class="footer__adress">г. Киев, пр-т Леси Украинки, 26</p>
-                </li>
-                <li>
-                  <a class="footer__mail" href="mailto:info@example.com"
-                    >info@example.com</a
-                  >
-                </li>
-                <li>
-                  <a class="footer__tel" href="tel:+380991111111"
-                    >+38 099 111 11 11
-                  </a>
-                </li>
-              </ul>
-            </address>
-          </div>
-          <div class="footer-soc">
-            <div class="footer-soc__join">
-              <p class="footer-soc__join-text">присоединяйтесь</p>
+        <div class="footer-form-wrap">
+          <div class="footer__thumb">
+            <div>
+              <a href="./index.html" class="footer__logo">Web<span class="footer__studio">Studio</span></a>
+              <address class="footer__contact">
+                <ul class="footer__list list">
+                  <li>
+                    <p class="footer__adress">г. Киев, пр-т Леси Украинки, 26</p>
+                  </li>
+                  <li>
+                    <a class="footer__mail" href="mailto:info@example.com">info@example.com</a>
+                  </li>
+                  <li>
+                    <a class="footer__tel" href="tel:+380991111111">+38 099 111 11 11
+                    </a>
+                  </li>
+                </ul>
+              </address>
             </div>
-            <div class="footer-soc__thumb">
-              <ul class="footer-soc__list list">
-                <li class="footer-soc__item">
-                  <a class="footer-soc__link" href="">
-                    <svg class="footer-soc__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-instagram-icon"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="footer-soc__item">
-                  <a class="footer-soc__link" href="">
-                    <svg class="footer-soc__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-twitter-icon"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="footer-soc__item">
-                  <a class="footer-soc__link" href="">
-                    <svg class="footer-soc__icon" width="10" height="20">
-                      <use href="./images/icons.svg#icon-facebook-icon"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="footer-soc__item">
-                  <a class="footer-soc__link" href="">
-                    <svg class="footer-soc__icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-linkedin-icon"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+            <div class="footer-soc">
+              <div class="footer-soc__join">
+                <p class="footer-soc__join-text">присоединяйтесь</p>
+              </div>
+              <div class="footer-soc__thumb">
+                <ul class="footer-soc__list list">
+                  <li class="footer-soc__item">
+                    <a class="footer-soc__link" href="">
+                      <svg class="footer-soc__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="footer-soc__item">
+                    <a class="footer-soc__link" href="">
+                      <svg class="footer-soc__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-twitter-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="footer-soc__item">
+                    <a class="footer-soc__link" href="">
+                      <svg class="footer-soc__icon" width="10" height="20">
+                        <use href="./images/icons.svg#icon-facebook-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="footer-soc__item">
+                    <a class="footer-soc__link" href="">
+                      <svg class="footer-soc__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <form class="footer-form">
             <p class="footer-form__title">Подпишитесь на рассылку</p>
             <label class="footer-form__email">
-              <input
-                type="email"
-                name="form-footer-email"
-                class="footer-form__input"
-                placeholder="E-mail"
-              />
+              <input type="email" name="form-footer-email" class="footer-form__input" placeholder="E-mail" />
             </label>
             <button type="submit" class="footer-form__button">
               <span class="footer-form__button-text">Подписаться</span>
