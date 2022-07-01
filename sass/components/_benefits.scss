@@ -1,6 +1,15 @@
+benefits{
+  @media screen and (max-width:479px) {
+    width: 480px;
+  }
+  @media screen and (max-width: 768px){
+    min-width: 480px;
+  }
+}
 .benefits__container {
   @media screen and (max-width: 768px) {
     padding-bottom: 60px;
+   
   }
 }
 
@@ -34,12 +43,15 @@
   content: "";
   border: none;
   background: $secondary-background;
-  width: 270px;
+  // width: 270px;
   height: 120px;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (min-width:320px)and (max-width: 480px) {
+      width: 100%;
+    }
 
   @media screen and (max-width: 767px) {
     width: 100%;
