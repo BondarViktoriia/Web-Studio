@@ -78,7 +78,6 @@ body {
 }
 
 .header {
-  padding-bottom: 16px;
   background-color: #ffffff;
   border-bottom: 1px solid rgb(236, 236, 236);
 }
@@ -130,6 +129,9 @@ body {
   z-index: 2;
   text-align: center;
   justify-content: center;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__menu .header__menu-close {
   display: none;
