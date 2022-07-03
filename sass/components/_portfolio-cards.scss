@@ -2,6 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  @media screen and (max-width:479px) {
+      width: 100%;
+    }
 }
 .portfolio-cards__item {
   display: inline-block;

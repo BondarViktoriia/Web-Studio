@@ -1,3 +1,13 @@
+.portfolio {
+  @media screen and (max-width:479px) {
+    width:100%;
+  }
+}
+.portfolio__container{
+  @media screen and (max-width:479px) {
+      width:480px;
+    }
+}
 .portfolio__filtrs-list {
   display: flex;
   justify-content: center;
