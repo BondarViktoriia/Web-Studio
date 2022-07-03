@@ -37,7 +37,7 @@ body {
 }
 @media screen and (max-width: 479px) {
   .container {
-    width: 479px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -80,6 +80,11 @@ body {
 .header {
   background-color: #ffffff;
   border-bottom: 1px solid rgb(236, 236, 236);
+}
+@media screen and (max-width: 479px) {
+  .header {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 767px) {
   .header {
@@ -241,6 +246,7 @@ header__menu-icon:focus {
 @media screen and (min-width: 768px) {
   .tablet-desktop {
     display: flex;
+    height: 80px;
   }
 }
 
@@ -609,7 +615,7 @@ header__menu-icon:focus {
 
 @media screen and (max-width: 479px) {
   benefits {
-    width: 480px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -786,6 +792,11 @@ header__menu-icon:focus {
   padding-bottom: 94px;
   padding-left: 15px;
 }
+@media screen and (max-width: 479px) {
+  .team {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1199px) {
   .team {
     padding-left: 0;
@@ -932,7 +943,7 @@ header__menu-icon:focus {
 
 @media screen and (max-width: 479px) {
   .clients {
-    min-width: 480px;
+    width: 100%;
   }
 }
 
@@ -1023,6 +1034,11 @@ header__menu-icon:focus {
   line-height: 1.71;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (max-width: 479px) {
+  .footer {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 767px) {
   .footer {
